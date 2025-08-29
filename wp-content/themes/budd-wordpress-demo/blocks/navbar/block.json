@@ -1,0 +1,89 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/navbar",
+  "title": "Navbar",
+  "description": "A responsive navigation bar with logo, menu links, and call-to-action buttons.",
+  "category": "wcb-blocks",
+  "icon": "menu",
+  "keywords": [
+    "navbar",
+    "navigation",
+    "menu",
+    "header"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f712f722003": {
+          "ID": 123,
+          "url": "https://example.com/logo.png",
+          "alt": "Company Logo",
+          "title": "Company Logo"
+        },
+        "field_198f712f722735": {
+          "url": "/",
+          "title": "Home",
+          "target": ""
+        },
+        "field_198f712f72297a": {
+          "row-0": {
+            "field_198f712f722e01": {
+              "url": "/about",
+              "title": "About",
+              "target": ""
+            }
+          },
+          "row-1": {
+            "field_198f712f722e01": {
+              "url": "/services",
+              "title": "Services",
+              "target": ""
+            }
+          },
+          "row-2": {
+            "field_198f712f722e01": {
+              "url": "/blog",
+              "title": "Blog",
+              "target": ""
+            }
+          }
+        },
+        "field_198f712f722e4a": {
+          "url": "/contact",
+          "title": "Contact us",
+          "target": ""
+        },
+        "field_198f712f722d6b": {
+          "url": "/download",
+          "title": "Download the app",
+          "target": ""
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

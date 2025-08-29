@@ -1,0 +1,46 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/blog-archive",
+  "title": "Blog Archive",
+  "description": "Displays a list of the latest posts in card format with featured images, categories, read time, titles, excerpts, and read more links.",
+  "category": "wcb-blocks",
+  "icon": "grid-view",
+  "keywords": [
+    "blog",
+    "archive",
+    "posts",
+    "cards"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f6fef54d956": 8
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

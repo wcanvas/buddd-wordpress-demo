@@ -1,0 +1,78 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/left-right",
+  "title": "Left Right",
+  "description": "A flexible two-column layout block with image and content sections, featuring accordions and customizable positioning.",
+  "category": "wcb-blocks",
+  "icon": "columns",
+  "keywords": [
+    "layout",
+    "columns",
+    "image",
+    "accordion",
+    "features"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f70814129f6": {
+          "ID": 123,
+          "url": "https://example.com/image.jpg",
+          "alt": "Sample feature image",
+          "title": "Feature Image"
+        },
+        "field_198f7081412811": "FEATURES",
+        "field_198f7081412900": {
+          "field_198f7081412f39": "h2",
+          "field_198f70814122aa": "Prioritize revenue-driving work"
+        },
+        "field_198f70814124c9": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
+        "field_198f7081412e6d": {
+          "row-0": {
+            "field_198f7081412614": "Streamline your reports",
+            "field_198f7081412019": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem."
+          },
+          "row-1": {
+            "field_198f7081412614": "Automate workflows",
+            "field_198f7081412019": "Save time with intelligent automation that handles repetitive tasks and keeps your team focused on what matters most."
+          },
+          "row-2": {
+            "field_198f7081412614": "Real-time analytics",
+            "field_198f7081412019": "Get instant insights into your performance with comprehensive dashboards and detailed reporting tools."
+          }
+        },
+        "field_198f70814127f6": {
+          "url": "#",
+          "title": "Download the app",
+          "target": ""
+        },
+        "field_198f7081412fdd": "left"
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

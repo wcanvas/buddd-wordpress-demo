@@ -1,0 +1,174 @@
+{
+  "key": "group_198f70d4f58dcf",
+  "title": "Block: Quote",
+  "fields": [
+    {
+      "key": "field_198f70d86e5482",
+      "label": "Content",
+      "name": "content_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 1,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f70d86e532a",
+      "label": "Quote Text",
+      "name": "quote_text",
+      "type": "textarea",
+      "instructions": "The main text of the quote.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "The journey of a thousand miles begins with a single step. Our commitment to nature is that first, most important step.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": ""
+    },
+    {
+      "key": "field_198f70d86e5674",
+      "label": "Author Name",
+      "name": "author_name",
+      "type": "text",
+      "instructions": "The name of the person being quoted.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Jane Doe",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f70d86e526d",
+      "label": "Author Title",
+      "name": "author_title",
+      "type": "text",
+      "instructions": "The title or affiliation of the author (e.g., \"Lead Ecologist\").",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Lead Ecologist",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f70d86e577c",
+      "label": "Content End",
+      "name": "content_accordion_end",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 1
+    },
+    {
+      "key": "field_198f70d86e5909",
+      "label": "Media",
+      "name": "media_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f70d86e5beb",
+      "label": "Background Image",
+      "name": "background_image",
+      "type": "image",
+      "instructions": "The background image for the section.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_198f70d86e5760",
+      "label": "Media End",
+      "name": "media_accordion_end",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 1
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/quote"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block is designed to display a prominent quote. It features a large text area for the quote itself, fields for the author's name and title, and an option to set a background image.",
+  "show_in_rest": 0,
+  "modified": 1756491515
+}

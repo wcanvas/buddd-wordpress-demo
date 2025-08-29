@@ -1,0 +1,65 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/hero",
+  "title": "Hero",
+  "description": "A prominent hero section with two-column layout featuring heading, description, call-to-action button, and image.",
+  "category": "wcb-blocks",
+  "icon": "cover-image",
+  "keywords": [
+    "hero",
+    "banner",
+    "intro",
+    "featured"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f705999f852": {
+          "field_198f705999f9dd": "h1",
+          "field_198f705999f8cd": "Your Ultimate Outdoor Companion"
+        },
+        "field_198f705999f3af": "Are you tired of spending hours searching for the perfect hiking or biking trail? TrailHive - the ultimate outdoor adventure app that connects you with the best trails in your area.",
+        "field_198f705999fd80": {
+          "url": "#",
+          "title": "Download the app",
+          "target": ""
+        },
+        "field_198f705999f79b": {
+          "ID": 123,
+          "url": "https://via.placeholder.com/600x400",
+          "alt": "Hero image placeholder",
+          "title": "Hero Image",
+          "sizes": {
+            "medium": "https://via.placeholder.com/300x200",
+            "large": "https://via.placeholder.com/600x400"
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

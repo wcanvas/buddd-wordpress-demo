@@ -1,0 +1,19 @@
+.wp-block-wcb-gallery-block {
+  .js-gallery-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #d9efde;
+    opacity: 0.5;
+    transition: opacity 0.3s, background-color 0.3s;
+  }
+
+  .js-gallery-pagination .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

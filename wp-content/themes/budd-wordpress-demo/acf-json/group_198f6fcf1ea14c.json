@@ -1,0 +1,43 @@
+{
+  "key": "group_198f6fcf1ea14c",
+  "title": "Post Details",
+  "fields": [
+    {
+      "key": "field_198f6fd066116b",
+      "label": "Read Time",
+      "name": "read_time",
+      "type": "text",
+      "instructions": "Estimated reading time for this post (e.g., '5 minutes', '2 min read')",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "e.g., 5 minutes",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "side",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Additional metadata fields for individual posts.",
+  "modified": 1756490434
+}

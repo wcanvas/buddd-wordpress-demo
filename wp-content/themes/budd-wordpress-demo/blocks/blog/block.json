@@ -1,0 +1,55 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/blog",
+  "title": "Blog",
+  "description": "Displays a dynamic and filterable blog feed with header section, category filters, search functionality, and featured post layout.",
+  "category": "wcb-blocks",
+  "icon": "admin-post",
+  "keywords": [
+    "blog",
+    "posts",
+    "feed",
+    "filter",
+    "search"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f6fd4bc6436": "Blog",
+        "field_198f6fd4bc6cc2": {
+          "field_198f6fd4bc633e": "h2",
+          "field_198f6fd4bc6c31": "Lorem ipsum dolor sit amet consectetur."
+        },
+        "field_198f6fd4bc6170": "Explore our collection of blog posts to learn more about the world of wine.",
+        "field_198f6fd4bc6e73": "All",
+        "field_198f6fd4bc6e7f": "Search",
+        "field_198f6fd4bc6046": []
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "key": "group_blog_grid",
+  "title": "Block: Blog Grid",
+  "fields": [
+    {
+      "key": "field_198f7022fdcd4c",
+      "label": "Content",
+      "name": "content_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 1,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f7022fdc5be",
+      "label": "Pre-heading",
+      "name": "preheading",
+      "type": "text",
+      "instructions": "The small text appearing above the main heading",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Blog",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f7022fdc727",
+      "label": "Heading",
+      "name": "heading_group",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_198f7022fdc442",
+          "label": "Level",
+          "name": "level",
+          "type": "select",
+          "instructions": "Select the HTML tag for the heading",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "choices": {
+            "h1": "H1",
+            "h2": "H2",
+            "h3": "H3",
+            "h4": "H4",
+            "h5": "H5",
+            "h6": "H6"
+          },
+          "default_value": "h2",
+          "allow_null": 0,
+          "multiple": 0,
+          "ui": 0,
+          "return_format": "value",
+          "ajax": 0,
+          "placeholder": ""
+        },
+        {
+          "key": "field_198f7022fdc2da",
+          "label": "Text",
+          "name": "text",
+          "type": "text",
+          "instructions": "The main title for the section",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Short heading goes here",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_198f7022fdcada",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "The short paragraph below the heading",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": ""
+    },
+    {
+      "key": "field_198f7022fdcac2",
+      "label": "Options",
+      "name": "options_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f7022fdcfa7",
+      "label": "Fetch Posts Automatically",
+      "name": "source_type",
+      "type": "true_false",
+      "instructions": "Toggle to switch between fetching latest posts automatically or selecting them manually",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "message": "",
+      "default_value": 1,
+      "ui": 1,
+      "ui_on_text": "",
+      "ui_off_text": ""
+    },
+    {
+      "key": "field_198f7022fdc610",
+      "label": "Manual Post Selection",
+      "name": "posts",
+      "type": "relationship",
+      "instructions": "Select specific posts to display",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_198f7022fdcfa7",
+            "operator": "!=",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "post_type": [
+        "post"
+      ],
+      "taxonomy": "",
+      "filters": [
+        "search",
+        "post_type",
+        "taxonomy"
+      ],
+      "elements": "",
+      "min": "",
+      "max": "",
+      "return_format": "object"
+    },
+    {
+      "key": "field_198f7022fdc63b",
+      "label": "View All Button",
+      "name": "view_all_button",
+      "type": "link",
+      "instructions": "The button at the bottom of the section",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "#",
+        "title": "View all",
+        "target": ""
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/blog-grid"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block displays a curated grid of blog posts with a main title section and query options for automatic or manual post selection.",
+  "show_in_rest": 0,
+  "modified": 1756490772
+}

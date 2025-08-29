@@ -1,0 +1,58 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/quote",
+  "title": "Quote",
+  "description": "Display a prominent quote with author information and optional background image.",
+  "category": "wcb-blocks",
+  "icon": "format-quote",
+  "keywords": [
+    "quote",
+    "testimonial",
+    "author"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f70d86e532a": "The journey of a thousand miles begins with a single step. Our commitment to nature is that first, most important step.",
+        "field_198f70d86e5674": "Jane Doe",
+        "field_198f70d86e526d": "Lead Ecologist",
+        "field_198f70d86e5beb": {
+          "ID": 123,
+          "url": "https://example.com/background-pattern.jpg",
+          "alt": "Topographic pattern background",
+          "title": "Background Pattern",
+          "sizes": {
+            "medium": "https://example.com/background-pattern-300x200.jpg",
+            "large": "https://example.com/background-pattern-1024x683.jpg",
+            "full": "https://example.com/background-pattern.jpg"
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

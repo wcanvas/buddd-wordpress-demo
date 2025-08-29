@@ -1,0 +1,206 @@
+{
+  "key": "group_198f71188b45e8",
+  "title": "Block: Hero Stack",
+  "fields": [
+    {
+      "key": "field_198f711c72a4fe",
+      "label": "Content",
+      "name": "content_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 1,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f711c72acef",
+      "label": "Main Heading",
+      "name": "main_heading_group",
+      "type": "group",
+      "instructions": "Configure the main heading displayed at the top of the block.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_198f711c72ae06",
+          "label": "Level",
+          "name": "level",
+          "type": "select",
+          "instructions": "Select the HTML tag for the main heading.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "choices": {
+            "h1": "H1",
+            "h2": "H2",
+            "h3": "H3",
+            "h4": "H4",
+            "h5": "H5",
+            "h6": "H6"
+          },
+          "default_value": "h1",
+          "allow_null": 0,
+          "multiple": 0,
+          "ui": 0,
+          "return_format": "value",
+          "ajax": 0,
+          "placeholder": ""
+        },
+        {
+          "key": "field_198f711c72a762",
+          "label": "Text",
+          "name": "text",
+          "type": "text",
+          "instructions": "Enter the main heading text.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Find new trails to explore and adventures to embark on.",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_198f711c72a044",
+      "label": "Card Title",
+      "name": "card_title",
+      "type": "text",
+      "instructions": "Enter the title for the overlay card.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Efficiency starts with the right tools",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f711c72acaf",
+      "label": "Card Description",
+      "name": "card_description",
+      "type": "textarea",
+      "instructions": "Enter the descriptive text for the overlay card.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "A comprehensive suite of accounting solutions that streamline your financial management, reduce errors, and save you time.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": ""
+    },
+    {
+      "key": "field_198f711c72a4fc",
+      "label": "Card Button",
+      "name": "card_button",
+      "type": "link",
+      "instructions": "Configure the call-to-action button within the card.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": {
+        "url": "#",
+        "title": "Get Started Now",
+        "target": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_198f711c72a8ca",
+      "label": "Media",
+      "name": "media_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f711c72a6f1",
+      "label": "Background Image",
+      "name": "background_image",
+      "type": "image",
+      "instructions": "Upload the large background image displayed behind the content card.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/hero-stack"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block creates a hero section with a stacked layout. It features a main heading at the top, followed by a large image. A content card is overlaid on the bottom portion of the image, containing its own title, a short description, and a call-to-action button.",
+  "show_in_rest": 0,
+  "modified": 1756491794
+}

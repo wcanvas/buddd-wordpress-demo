@@ -1,0 +1,75 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/stats-with-image",
+  "title": "Stats With Image",
+  "description": "Displays key features or statistics in a two-column layout with introductory text, collapsible accordion list, and a prominent showcase image.",
+  "category": "wcb-blocks",
+  "icon": "chart-bar",
+  "keywords": [
+    "stats",
+    "statistics",
+    "features",
+    "accordion",
+    "image",
+    "chart"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f709d74d519": "FEATURES",
+        "field_198f709d74d88f": {
+          "field_198f709d74d85d": "h2",
+          "field_198f709d74d4bd": "Prioritize revenue-driving work"
+        },
+        "field_198f709d74da18": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
+        "field_198f709d74dbc4": {
+          "row-0": {
+            "field_198f709d74d77e": "Streamline your reports",
+            "field_198f709d74dd74": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem."
+          },
+          "row-1": {
+            "field_198f709d74d77e": "Advanced analytics",
+            "field_198f709d74dd74": "Get detailed insights into your performance metrics with comprehensive reporting tools."
+          },
+          "row-2": {
+            "field_198f709d74d77e": "Real-time data",
+            "field_198f709d74dd74": "Access up-to-date information instantly to make informed decisions quickly."
+          }
+        },
+        "field_198f709d74d40f": {
+          "ID": 123,
+          "url": "https://example.com/chart-image.jpg",
+          "alt": "Analytics dashboard showing key performance metrics",
+          "title": "Dashboard Chart",
+          "width": 800,
+          "height": 600
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

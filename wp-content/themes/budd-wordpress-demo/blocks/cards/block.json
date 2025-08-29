@@ -1,0 +1,81 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/cards",
+  "title": "Cards",
+  "description": "Showcase key features in a two-column layout with introductory content and repeatable feature cards.",
+  "category": "wcb-blocks",
+  "icon": "grid-view",
+  "keywords": [
+    "cards",
+    "features",
+    "grid",
+    "layout"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f710c3a8a71": "FEATURES",
+        "field_198f710c3a8ae2": {
+          "field_198f710c3a89dc": "h2",
+          "field_198f710c3a8f47": "Stay Active and Healthy"
+        },
+        "field_198f710c3a8cc1": {
+          "url": "#",
+          "title": "Learn more",
+          "target": ""
+        },
+        "field_198f710c3a8552": {
+          "row-0": {
+            "field_198f710c3a84ff": {
+              "url": "https://via.placeholder.com/400x300",
+              "alt": "Access nature feature"
+            },
+            "field_198f710c3a89db": "Access nature",
+            "field_198f710c3a875c": "With TrailHive, you'll have access to a comprehensive database of trails, complete with detailed information on ratings, difficulty levels, and user reviews."
+          },
+          "row-1": {
+            "field_198f710c3a84ff": {
+              "url": "https://via.placeholder.com/400x300",
+              "alt": "Track progress feature"
+            },
+            "field_198f710c3a89db": "Track progress",
+            "field_198f710c3a875c": "Monitor your hiking achievements and set personal goals with our built-in tracking system that records your adventures."
+          },
+          "row-2": {
+            "field_198f710c3a84ff": {
+              "url": "https://via.placeholder.com/400x300",
+              "alt": "Community features"
+            },
+            "field_198f710c3a89db": "Join community",
+            "field_198f710c3a875c": "Connect with fellow outdoor enthusiasts, share experiences, and discover new trails through our vibrant community platform."
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

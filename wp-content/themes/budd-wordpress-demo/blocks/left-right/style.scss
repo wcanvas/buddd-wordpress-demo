@@ -1,0 +1,19 @@
+.wp-block-wcb-left-right {
+	.js-accordion-item {
+		.js-accordion-icon-open {
+			display: none;
+		}
+		.js-accordion-icon-closed {
+			display: block;
+		}
+
+		&.is-open {
+			.js-accordion-icon-open {
+				display: block;
+			}
+			.js-accordion-icon-closed {
+				display: none;
+			}
+		}
+	}
+}

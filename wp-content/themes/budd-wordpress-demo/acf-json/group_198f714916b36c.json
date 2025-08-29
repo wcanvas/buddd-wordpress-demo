@@ -1,0 +1,434 @@
+{
+  "key": "group_198f714916b36c",
+  "title": "Block: Footer",
+  "fields": [
+    {
+      "key": "field_198f714ffd4b8b",
+      "label": "Logo",
+      "name": "",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f714ffd4bb2",
+      "label": "Logo",
+      "name": "logo",
+      "type": "image",
+      "instructions": "The logo displayed in the footer.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_198f714ffd48c2",
+      "label": "Logo Link",
+      "name": "logo_link",
+      "type": "link",
+      "instructions": "The URL the logo links to, typically the homepage.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "#",
+        "title": "Home",
+        "target": ""
+      }
+    },
+    {
+      "key": "field_198f714ffd4bc6",
+      "label": "Content",
+      "name": "",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f714ffd42b1",
+      "label": "Navigation Columns",
+      "name": "navigation_columns",
+      "type": "repeater",
+      "instructions": "For creating columns of navigation links.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Column",
+      "sub_fields": [
+        {
+          "key": "field_198f714ffd4454",
+          "label": "Column",
+          "name": "",
+          "type": "accordion",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "open": 0,
+          "multi_expand": 0,
+          "endpoint": 0
+        },
+        {
+          "key": "field_198f714ffd45d0",
+          "label": "Column Title",
+          "name": "column_title",
+          "type": "text",
+          "instructions": "The heading for the link column (e.g., \"App\", \"Company\").",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Column Title",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_198f714ffd4b15",
+          "label": "Column Links",
+          "name": "column_links",
+          "type": "repeater",
+          "instructions": "The list of links within the column.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "collapsed": "",
+          "min": 0,
+          "max": 0,
+          "layout": "block",
+          "button_label": "Add Link",
+          "sub_fields": [
+            {
+              "key": "field_198f714ffd4801",
+              "label": "Link",
+              "name": "",
+              "type": "accordion",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "open": 0,
+              "multi_expand": 0,
+              "endpoint": 0
+            },
+            {
+              "key": "field_198f714ffd4f3b",
+              "label": "Link",
+              "name": "link",
+              "type": "link",
+              "instructions": "A single navigation link.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "default_value": {
+                "url": "#",
+                "title": "Link Text",
+                "target": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_198f714ffd4609",
+      "label": "Newsletter Placeholder",
+      "name": "newsletter_placeholder",
+      "type": "text",
+      "instructions": "The placeholder text for the email input field.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Enter your email",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f714ffd4273",
+      "label": "Newsletter Button",
+      "name": "newsletter_button",
+      "type": "link",
+      "instructions": "The subscribe button text and link (or form action).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "#",
+        "title": "Subscribe",
+        "target": ""
+      }
+    },
+    {
+      "key": "field_198f714ffd4b29",
+      "label": "Newsletter Disclaimer",
+      "name": "newsletter_disclaimer",
+      "type": "wysiwyg",
+      "instructions": "The disclaimer text below the subscription form, allowing for links.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "By subscribing you agree to with our <a href=\"#\">Privacy Policy</a>",
+      "tabs": "visual",
+      "toolbar": "basic",
+      "media_upload": 0,
+      "delay": 0
+    },
+    {
+      "key": "field_198f714ffd45f2",
+      "label": "Copyright Text",
+      "name": "copyright_text",
+      "type": "text",
+      "instructions": "The copyright notice in the footer bottom.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "© 2023 TrailHive. All rights reserved.",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f714ffd45b4",
+      "label": "Legal Links",
+      "name": "legal_links",
+      "type": "repeater",
+      "instructions": "For the list of legal links (e.g., Privacy Policy).",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Legal Link",
+      "sub_fields": [
+        {
+          "key": "field_198f714ffd4fa4",
+          "label": "Legal Link",
+          "name": "",
+          "type": "accordion",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "open": 0,
+          "multi_expand": 0,
+          "endpoint": 0
+        },
+        {
+          "key": "field_198f714ffd4a27",
+          "label": "Link",
+          "name": "link",
+          "type": "link",
+          "instructions": "A single legal link.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "default_value": {
+            "url": "#",
+            "title": "Legal Link",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_198f714ffd4cfc",
+      "label": "Social Links",
+      "name": "social_links",
+      "type": "repeater",
+      "instructions": "For the list of social media icons.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Social Link",
+      "sub_fields": [
+        {
+          "key": "field_198f714ffd4b06",
+          "label": "Social Link",
+          "name": "",
+          "type": "accordion",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "open": 0,
+          "multi_expand": 0,
+          "endpoint": 0
+        },
+        {
+          "key": "field_198f714ffd49f9",
+          "label": "Icon",
+          "name": "icon",
+          "type": "select",
+          "instructions": "A dropdown to choose the social media icon.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "choices": {
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn"
+          },
+          "default_value": "facebook",
+          "allow_null": 0,
+          "multiple": 0,
+          "ui": 0,
+          "return_format": "value",
+          "ajax": 0,
+          "placeholder": ""
+        },
+        {
+          "key": "field_198f714ffd4876",
+          "label": "Link",
+          "name": "link",
+          "type": "url",
+          "instructions": "The URL for the social media profile.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "#",
+          "placeholder": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/footer"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block creates a comprehensive website footer. It includes a logo, multiple columns of navigation links, a newsletter subscription form, a copyright notice, legal links, and social media icons. The layout is designed to provide essential site-wide information and navigation at the bottom of each page.",
+  "show_in_rest": 0,
+  "modified": 1756492005
+}

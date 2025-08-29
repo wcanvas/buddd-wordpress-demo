@@ -1,0 +1,398 @@
+{
+  "key": "group_198f6ff9dbfeec",
+  "title": "Block: Pricing",
+  "fields": [
+    {
+      "key": "field_198f7001d1f44c",
+      "label": "Content",
+      "name": "",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 1,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f7001d1f3b3",
+      "label": "Tagline",
+      "name": "tagline",
+      "type": "text",
+      "instructions": "The small text appearing above the main heading.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Tagline",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f7001d1f3d4",
+      "label": "Heading",
+      "name": "heading",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_198f7001d1f459",
+          "label": "Level",
+          "name": "level",
+          "type": "select",
+          "instructions": "Select the heading level",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "choices": {
+            "h1": "H1",
+            "h2": "H2",
+            "h3": "H3",
+            "h4": "H4",
+            "h5": "H5",
+            "h6": "H6"
+          },
+          "default_value": "h2",
+          "allow_null": 0,
+          "multiple": 0,
+          "ui": 0,
+          "return_format": "value",
+          "ajax": 0,
+          "placeholder": ""
+        },
+        {
+          "key": "field_198f7001d1fdb9",
+          "label": "Text",
+          "name": "text",
+          "type": "text",
+          "instructions": "The main title for the pricing section.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Pricing plan",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_198f7001d1fe66",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "The paragraph of text below the heading.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_198f7001d1fda4",
+      "label": "Toggle Monthly Label",
+      "name": "toggle_monthly_label",
+      "type": "text",
+      "instructions": "The text for the 'Monthly' option in the toggle switch.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Monthly",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f7001d1feac",
+      "label": "Toggle Yearly Label",
+      "name": "toggle_yearly_label",
+      "type": "text",
+      "instructions": "The text for the 'Yearly' option in the toggle switch.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Yearly",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f7001d1f518",
+      "label": "Includes Label",
+      "name": "includes_label",
+      "type": "text",
+      "instructions": "The label for the features list (e.g., \"Includes:\").",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Includes:",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_198f7001d1f388",
+      "label": "Pricing Plans",
+      "name": "pricing_plans",
+      "type": "repeater",
+      "instructions": "A list of the pricing plans.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Plan",
+      "sub_fields": [
+        {
+          "key": "field_198f7001d1f85f",
+          "label": "Plan",
+          "name": "",
+          "type": "accordion",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "open": 1,
+          "multi_expand": 0,
+          "endpoint": 0
+        },
+        {
+          "key": "field_198f7001d1f590",
+          "label": "Icon",
+          "name": "icon",
+          "type": "image",
+          "instructions": "The icon displayed at the top of the card (e.g., star, diamond).",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_198f7001d1f97b",
+          "label": "Plan Name",
+          "name": "plan_name",
+          "type": "text",
+          "instructions": "The name of the pricing plan (e.g., \"Basic plan\").",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Basic plan",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_198f7001d1fa3a",
+          "label": "Monthly Price",
+          "name": "monthly_price",
+          "type": "text",
+          "instructions": "The price for the monthly billing cycle (e.g., \"$19/mo\").",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "$19/mo",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_198f7001d1fe42",
+          "label": "Yearly Price",
+          "name": "yearly_price",
+          "type": "text",
+          "instructions": "The price for the yearly billing cycle.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "$190/yr",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_198f7001d1fa3c",
+          "label": "Features",
+          "name": "features",
+          "type": "repeater",
+          "instructions": "A list of features for this plan.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "collapsed": "",
+          "min": 0,
+          "max": 0,
+          "layout": "block",
+          "button_label": "Add Feature",
+          "sub_fields": [
+            {
+              "key": "field_198f7001d1f757",
+              "label": "Feature",
+              "name": "",
+              "type": "accordion",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "open": 1,
+              "multi_expand": 0,
+              "endpoint": 0
+            },
+            {
+              "key": "field_198f7001d1fa7f",
+              "label": "Feature",
+              "name": "feature",
+              "type": "text",
+              "instructions": "A single feature item.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Feature text goes here",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_198f7001d1fbb0",
+          "label": "Button",
+          "name": "button",
+          "type": "link",
+          "instructions": "The call-to-action button for the plan.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "default_value": {
+            "url": "#",
+            "title": "Get started",
+            "target": "null"
+          }
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/pricing"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block displays a set of pricing plans. It includes a main header with a tagline, title, and description. A toggle switch allows users to view monthly versus yearly pricing options. The plans themselves are presented in individual cards, each detailing the plan name, price, an associated icon, a list of included features, and a call-to-action button.",
+  "show_in_rest": 0,
+  "modified": 1756490636
+}

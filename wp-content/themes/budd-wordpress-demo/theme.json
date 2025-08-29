@@ -68,6 +68,221 @@
           "color": "#FFFFFF",
           "name": "Tertiary - White",
           "slug": "tertiary"
+        },
+        {
+          "color": "#00000026",
+          "name": "Black Transparent 15%",
+          "slug": "color-1"
+        },
+        {
+          "color": "#135C9F",
+          "name": "Deep Blue",
+          "slug": "color-2"
+        },
+        {
+          "color": "#232E26",
+          "name": "Dark Forest Green",
+          "slug": "color-3"
+        },
+        {
+          "color": "#232e261f",
+          "name": "Dark Forest Green Transparent 12%",
+          "slug": "color-4"
+        },
+        {
+          "color": "#232e2633",
+          "name": "Dark Forest Green Transparent 20%",
+          "slug": "color-5"
+        },
+        {
+          "color": "#232e264d",
+          "name": "Dark Forest Green Transparent 30%",
+          "slug": "color-6"
+        },
+        {
+          "color": "#242F27",
+          "name": "Charcoal Green",
+          "slug": "color-7"
+        },
+        {
+          "color": "#243027",
+          "name": "Deep Pine Green",
+          "slug": "color-8"
+        },
+        {
+          "color": "#285b5226",
+          "name": "Teal Transparent 15%",
+          "slug": "color-9"
+        },
+        {
+          "color": "#2D8DCA",
+          "name": "Ocean Blue",
+          "slug": "color-10"
+        },
+        {
+          "color": "#333333",
+          "name": "Dark Grey",
+          "slug": "color-11"
+        },
+        {
+          "color": "#3333331a",
+          "name": "Dark Grey Transparent 10%",
+          "slug": "color-12"
+        },
+        {
+          "color": "#33333340",
+          "name": "Dark Grey Transparent 25%",
+          "slug": "color-13"
+        },
+        {
+          "color": "#398141",
+          "name": "Forest Green",
+          "slug": "color-14"
+        },
+        {
+          "color": "#433771",
+          "name": "Deep Purple",
+          "slug": "color-15"
+        },
+        {
+          "color": "#493D75",
+          "name": "Royal Purple",
+          "slug": "color-16"
+        },
+        {
+          "color": "#514E4C",
+          "name": "Warm Grey",
+          "slug": "color-17"
+        },
+        {
+          "color": "#5AA449",
+          "name": "Grass Green",
+          "slug": "color-18"
+        },
+        {
+          "color": "#5DBBEA",
+          "name": "Sky Blue",
+          "slug": "color-19"
+        },
+        {
+          "color": "#781D1D",
+          "name": "Dark Red",
+          "slug": "color-20"
+        },
+        {
+          "color": "#81C047",
+          "name": "Fresh Green",
+          "slug": "color-21"
+        },
+        {
+          "color": "#929497",
+          "name": "Medium Grey",
+          "slug": "color-22"
+        },
+        {
+          "color": "#949291",
+          "name": "Stone Grey",
+          "slug": "color-23"
+        },
+        {
+          "color": "#A5CB39",
+          "name": "Lime Green",
+          "slug": "color-24"
+        },
+        {
+          "color": "#A72126",
+          "name": "Crimson Red",
+          "slug": "color-25"
+        },
+        {
+          "color": "#A9D17B",
+          "name": "Light Green",
+          "slug": "color-26"
+        },
+        {
+          "color": "#B9B2D6",
+          "name": "Lavender",
+          "slug": "color-27"
+        },
+        {
+          "color": "#CFCBE2",
+          "name": "Pale Purple",
+          "slug": "color-28"
+        },
+        {
+          "color": "#D9272D",
+          "name": "Bright Red",
+          "slug": "color-29"
+        },
+        {
+          "color": "#D9EFDE",
+          "name": "Mint Green",
+          "slug": "color-30"
+        },
+        {
+          "color": "#d9efde33",
+          "name": "Mint Green Transparent 20%",
+          "slug": "color-31"
+        },
+        {
+          "color": "#d9efde4d",
+          "name": "Mint Green Transparent 30%",
+          "slug": "color-32"
+        },
+        {
+          "color": "#d9efde80",
+          "name": "Mint Green Transparent 50%",
+          "slug": "color-33"
+        },
+        {
+          "color": "#d9efdee6",
+          "name": "Mint Green Transparent 90%",
+          "slug": "color-34"
+        },
+        {
+          "color": "#DDDCDB",
+          "name": "Light Grey",
+          "slug": "color-35"
+        },
+        {
+          "color": "#E46E59",
+          "name": "Coral",
+          "slug": "color-36"
+        },
+        {
+          "color": "#E47525",
+          "name": "Orange",
+          "slug": "color-37"
+        },
+        {
+          "color": "#F2F4F8",
+          "name": "Off White Blue",
+          "slug": "color-38"
+        },
+        {
+          "color": "#F3BF17",
+          "name": "Golden Yellow",
+          "slug": "color-39"
+        },
+        {
+          "color": "#F5F5F6",
+          "name": "Almost White",
+          "slug": "color-40"
+        },
+        {
+          "color": "#F9D167",
+          "name": "Light Yellow",
+          "slug": "color-41"
+        },
+        {
+          "color": "#FFFFFF",
+          "name": "Pure White",
+          "slug": "color-42"
+        },
+        {
+          "color": "#ffffff1a",
+          "name": "White Transparent 10%",
+          "slug": "color-43"
         }
       ]
     },
@@ -239,6 +454,81 @@
               ]
             }
           ]
+        },
+        {
+          "fontFamily": "Helvetica, sans-serif",
+          "slug": "font-2",
+          "fontFace": []
+        },
+        {
+          "fontFamily": "Inter, sans-serif",
+          "slug": "font-3",
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontStyle": "normal",
+              "fontWeight": "400 600",
+              "src": [
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-vietnamese-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-ext-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-ext-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-vietnamese-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-ext-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-ext-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-ext-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-vietnamese-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-ext-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-600-normal.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Lato, sans-serif",
+          "slug": "font-4",
+          "fontFace": [
+            {
+              "fontFamily": "Lato",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.2/files/lato-latin-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.2/files/lato-latin-400-normal.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Noto Sans, sans-serif",
+          "slug": "font-5",
+          "fontFace": [
+            {
+              "fontFamily": "Noto Sans",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-cyrillic-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-cyrillic-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-devanagari-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-greek-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-greek-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-vietnamese-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-latin-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-latin-400-normal.woff2"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -260,6 +550,42 @@
         }
       }
     },
-    "custom": {}
+    "custom": {
+      "fontSize": {
+        "size-1": "40px",
+        "size-2": "85px"
+      },
+      "spacing": {
+        "space-1": "2.882997989654541px",
+        "space-2": "9px",
+        "space-3": "60px",
+        "space-4": "95px",
+        "space-5": "168px",
+        "space-6": "220px"
+      },
+      "borderRadius": {
+        "radius-1": "1.4414989948272705px",
+        "radius-2": "10px",
+        "radius-3": "20px",
+        "radius-4": "39.62166976928711px",
+        "radius-5": "40px",
+        "radius-6": "50px",
+        "radius-7": "60px"
+      },
+      "lineHeight": {
+        "lh-1": "1em",
+        "lh-2": "1.1000000635782878em",
+        "lh-3": "1.2em",
+        "lh-4": "1.2399999618530273em",
+        "lh-5": "1.2999999523162842em",
+        "lh-6": "1.3333333333333333em",
+        "lh-7": "1.3999999364217122em",
+        "lh-8": "1.4em",
+        "lh-9": "1.5em",
+        "lh-10": "1.5999999727521623em",
+        "lh-11": "1.6000000635782878em",
+        "lh-12": "57.6px"
+      }
+    }
   }
 }

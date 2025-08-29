@@ -1,0 +1,63 @@
+{
+  "key": "group_blog_archive",
+  "title": "Block: Blog Archive",
+  "fields": [
+    {
+      "key": "field_198f6fef54dcba",
+      "label": "Options",
+      "name": "",
+      "aria-label": "",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_198f6fef54d956",
+      "label": "Posts per page",
+      "name": "posts_per_page",
+      "aria-label": "",
+      "type": "number",
+      "instructions": "The maximum number of posts to display on the page.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": 8,
+      "min": 1,
+      "max": 50,
+      "step": 1,
+      "placeholder": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/blog-archive"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block functions as a blog archive, automatically fetching and displaying a list of the latest posts. Each post is presented in a card format with its featured image, category, read time, title, excerpt, and a Read More link that directs to the full article.",
+  "show_in_rest": 0,
+  "modified": 1756490560
+}

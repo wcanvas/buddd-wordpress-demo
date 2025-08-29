@@ -1,0 +1,63 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/hero-stack",
+  "title": "Hero Stack",
+  "description": "A visually engaging hero section with stacked layout featuring a main heading, background image, and overlay content card with call-to-action.",
+  "category": "wcb-blocks",
+  "icon": "cover-image",
+  "keywords": [
+    "hero",
+    "stack",
+    "banner",
+    "image",
+    "overlay"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f711c72acef": {
+          "field_198f711c72ae06": "h1",
+          "field_198f711c72a762": "Find new trails to explore and adventures to embark on."
+        },
+        "field_198f711c72a044": "Efficiency starts with the right tools",
+        "field_198f711c72acaf": "A comprehensive suite of accounting solutions that streamline your financial management, reduce errors, and save you time.",
+        "field_198f711c72a4fc": {
+          "url": "#",
+          "title": "Get Started Now",
+          "target": ""
+        },
+        "field_198f711c72a6f1": {
+          "url": "https://via.placeholder.com/1200x800/4a90e2/ffffff?text=Hero+Background",
+          "alt": "Hero background image",
+          "width": 1200,
+          "height": 800
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

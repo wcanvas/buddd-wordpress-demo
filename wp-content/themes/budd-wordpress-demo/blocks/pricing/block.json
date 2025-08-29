@@ -1,0 +1,109 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/pricing",
+  "title": "Pricing",
+  "description": "Display pricing plans with monthly/yearly toggle, featuring plan cards with icons, features, and call-to-action buttons.",
+  "category": "wcb-blocks",
+  "icon": "money-alt",
+  "keywords": [
+    "pricing",
+    "plans",
+    "subscription",
+    "features"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f7001d1f3b3": "Pricing",
+        "field_198f7001d1f3d4": {
+          "field_198f7001d1f459": "h2",
+          "field_198f7001d1fdb9": "Choose Your Plan"
+        },
+        "field_198f7001d1fe66": "Select the perfect plan for your needs with flexible monthly or yearly billing options.",
+        "field_198f7001d1fda4": "Monthly",
+        "field_198f7001d1feac": "Yearly",
+        "field_198f7001d1f518": "Includes:",
+        "field_198f7001d1f388": {
+          "row-0": {
+            "field_198f7001d1f590": {
+              "url": "https://example.com/star-icon.svg",
+              "alt": "Star icon"
+            },
+            "field_198f7001d1f97b": "Basic Plan",
+            "field_198f7001d1fa3a": "$19/mo",
+            "field_198f7001d1fe42": "$190/yr",
+            "field_198f7001d1fa3c": {
+              "row-0": {
+                "field_198f7001d1fa7f": "Up to 5 users"
+              },
+              "row-1": {
+                "field_198f7001d1fa7f": "10GB storage"
+              },
+              "row-2": {
+                "field_198f7001d1fa7f": "Email support"
+              }
+            },
+            "field_198f7001d1fbb0": {
+              "title": "Get Started",
+              "url": "#",
+              "target": ""
+            }
+          },
+          "row-1": {
+            "field_198f7001d1f590": {
+              "url": "https://example.com/diamond-icon.svg",
+              "alt": "Diamond icon"
+            },
+            "field_198f7001d1f97b": "Pro Plan",
+            "field_198f7001d1fa3a": "$49/mo",
+            "field_198f7001d1fe42": "$490/yr",
+            "field_198f7001d1fa3c": {
+              "row-0": {
+                "field_198f7001d1fa7f": "Up to 25 users"
+              },
+              "row-1": {
+                "field_198f7001d1fa7f": "100GB storage"
+              },
+              "row-2": {
+                "field_198f7001d1fa7f": "Priority support"
+              },
+              "row-3": {
+                "field_198f7001d1fa7f": "Advanced analytics"
+              }
+            },
+            "field_198f7001d1fbb0": {
+              "title": "Upgrade Now",
+              "url": "#",
+              "target": ""
+            }
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

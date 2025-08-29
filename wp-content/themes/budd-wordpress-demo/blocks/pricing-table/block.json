@@ -1,0 +1,154 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/pricing-table",
+  "title": "Pricing Table",
+  "description": "Display a comprehensive pricing section with plan cards and detailed feature comparison table organized by categories.",
+  "category": "wcb-blocks",
+  "icon": "table-row-before",
+  "keywords": [
+    "pricing",
+    "table",
+    "plans",
+    "comparison"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f7036b7a87e": "Choose Your Plan",
+        "field_198f7036b7aa87": {
+          "field_198f7036b7ab23": "h2",
+          "field_198f7036b7a991": "Pricing Plans"
+        },
+        "field_198f7036b7a81f": "Select the perfect plan for your needs. Compare features and pricing to find the best fit for your business.",
+        "field_198f7036b7a122": {
+          "row-0": {
+            "field_198f7036b7a25d": "Basic",
+            "field_198f7036b7a6b4": "$19",
+            "field_198f7036b7a9f8": "Per month",
+            "field_198f7036b7af41": "Perfect for individuals and small teams getting started.",
+            "field_198f7036b7ad3e": {
+              "title": "Get Started",
+              "url": "#",
+              "target": ""
+            }
+          },
+          "row-1": {
+            "field_198f7036b7a25d": "Pro",
+            "field_198f7036b7a6b4": "$49",
+            "field_198f7036b7a9f8": "Per month",
+            "field_198f7036b7af41": "Ideal for growing businesses that need more features.",
+            "field_198f7036b7ad3e": {
+              "title": "Get Started",
+              "url": "#",
+              "target": ""
+            }
+          },
+          "row-2": {
+            "field_198f7036b7a25d": "Enterprise",
+            "field_198f7036b7a6b4": "$99",
+            "field_198f7036b7a9f8": "Per month",
+            "field_198f7036b7af41": "Complete solution for large organizations with advanced needs.",
+            "field_198f7036b7ad3e": {
+              "title": "Contact Sales",
+              "url": "#",
+              "target": ""
+            }
+          }
+        },
+        "field_198f7036b7a28e": {
+          "row-0": {
+            "field_198f7036b7a939": "Core Features",
+            "field_198f7036b7ada0": {
+              "row-0": {
+                "field_198f7036b7a0e9": "Users",
+                "field_198f7036b7a756": {
+                  "row-0": {
+                    "field_198f7036b7a047": "5"
+                  },
+                  "row-1": {
+                    "field_198f7036b7a047": "25"
+                  },
+                  "row-2": {
+                    "field_198f7036b7a047": "Unlimited"
+                  }
+                }
+              },
+              "row-1": {
+                "field_198f7036b7a0e9": "Storage",
+                "field_198f7036b7a756": {
+                  "row-0": {
+                    "field_198f7036b7a047": "10GB"
+                  },
+                  "row-1": {
+                    "field_198f7036b7a047": "100GB"
+                  },
+                  "row-2": {
+                    "field_198f7036b7a047": "1TB"
+                  }
+                }
+              }
+            }
+          },
+          "row-1": {
+            "field_198f7036b7a939": "Advanced Features",
+            "field_198f7036b7ada0": {
+              "row-0": {
+                "field_198f7036b7a0e9": "API Access",
+                "field_198f7036b7a756": {
+                  "row-0": {
+                    "field_198f7036b7a047": "✗"
+                  },
+                  "row-1": {
+                    "field_198f7036b7a047": "✓"
+                  },
+                  "row-2": {
+                    "field_198f7036b7a047": "✓"
+                  }
+                }
+              },
+              "row-1": {
+                "field_198f7036b7a0e9": "Priority Support",
+                "field_198f7036b7a756": {
+                  "row-0": {
+                    "field_198f7036b7a047": "✗"
+                  },
+                  "row-1": {
+                    "field_198f7036b7a047": "✗"
+                  },
+                  "row-2": {
+                    "field_198f7036b7a047": "✓"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}
