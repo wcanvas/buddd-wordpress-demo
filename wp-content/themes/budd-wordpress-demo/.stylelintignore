@@ -1,0 +1,4 @@
+node-modules/
+assets/build/
+dependencies/
+vendor/

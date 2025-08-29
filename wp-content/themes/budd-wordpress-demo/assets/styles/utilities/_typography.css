@@ -1,0 +1,43 @@
+@tailwind components;
+
+@layer components {
+	.wcb-title {
+		@apply wcb-text-black wcb-font-primary wcb-font-bold wcb-leading-normal;
+	}
+
+	.wcb-title--heading-1 {
+		@apply wcb-text-heading-1;
+	}
+
+	.wcb-title--heading-2 {
+		@apply wcb-text-heading-2;
+	}
+
+	.wcb-title--heading-3 {
+		@apply wcb-text-heading-3;
+	}
+
+	.wcb-title--heading-4 {
+		@apply wcb-text-heading-4;
+	}
+
+	.wcb-title--heading-5 {
+		@apply wcb-text-heading-5;
+	}
+
+	.wcb-title--heading-6 {
+		@apply wcb-text-heading-6;
+	}
+
+	.wcb-caption {
+		@apply wcb-text-primary wcb-opacity-70 wcb-font-primary wcb-font-normal wcb-text-sm wcb-leading-5 wcb-m-0;
+	}
+
+	.wcb-label {
+		@apply wcb-text-primary wcb-opacity-70 wcb-font-primary wcb-font-medium wcb-leading-5 wcb-m-0;
+	}
+
+	.wcb-paragraph {
+		@apply wcb-font-primary wcb-font-normal wcb-leading-5 wcb-h-max wcb-text-black;
+	}
+}

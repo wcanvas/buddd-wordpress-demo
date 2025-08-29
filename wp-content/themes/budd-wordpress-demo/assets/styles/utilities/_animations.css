@@ -1,0 +1,8 @@
+.wcb-animation-initial-state {
+	@apply wcb-opacity-0;
+}
+
+/* No animations in the editor */
+.editor-styles-wrapper .wcb-animation-initial-state {
+	@apply wcb-opacity-100;
+}

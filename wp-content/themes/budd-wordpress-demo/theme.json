@@ -1,0 +1,265 @@
+{
+  "version": 2,
+  "schema": "https://schemas.wp.org/trunk/theme.json",
+  "customTemplates": [
+    {
+      "name": "single-post",
+      "title": "Single Post",
+      "postTypes": [
+        "post"
+      ]
+    }
+  ],
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ],
+  "styles": {
+    "typography": {},
+    "elements": {},
+    "spacing": {
+      "padding": {
+        "right": "clamp(1rem, 0.192rem + 2.244vw, 1.875rem)",
+        "left": "clamp(1rem, 0.192rem + 2.244vw, 1.875rem)"
+      }
+    },
+    "blocks": {}
+  },
+  "settings": {
+    "appearanceTools": false,
+    "border": {
+      "color": false,
+      "radius": false,
+      "style": false,
+      "width": false
+    },
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false,
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "gradients": [],
+      "palette": [
+        {
+          "color": "#000000",
+          "name": "Primary - Black",
+          "slug": "primary"
+        },
+        {
+          "color": "#F4F4F4",
+          "name": "Secondary - Grey",
+          "slug": "secondary"
+        },
+        {
+          "color": "#FFFFFF",
+          "name": "Tertiary - White",
+          "slug": "tertiary"
+        }
+      ]
+    },
+    "shadow": {
+      "presets": [
+        {
+          "name": "Shadow 1",
+          "slug": "shadow-1",
+          "shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": null,
+      "wideSize": null
+    },
+    "spacing": {
+      "blockGap": true,
+      "customSpacingSize": false,
+      "spacingScale": {
+        "steps": 0
+      },
+      "spacingSizes": [
+        {
+          "size": "clamp(0.313rem, 0.094rem + 0.607vw, 0.625rem)",
+          "slug": "10",
+          "name": "10"
+        },
+        {
+          "size": "clamp(0.625rem, 0.188rem + 1.214vw, 1.25rem)",
+          "slug": "20",
+          "name": "20"
+        },
+        {
+          "size": "clamp(0.938rem, 0.282rem + 1.82vw, 1.875rem)",
+          "slug": "30",
+          "name": "30"
+        },
+        {
+          "size": "clamp(1.25rem, 0.376rem + 2.427vw, 2.5rem)",
+          "slug": "40",
+          "name": "40"
+        },
+        {
+          "size": "clamp(1.563rem, 0.47rem + 3.034vw, 3.125rem)",
+          "slug": "50",
+          "name": "50"
+        },
+        {
+          "size": "clamp(1.875rem, 0.564rem + 3.641vw, 3.75rem)",
+          "slug": "60",
+          "name": "60"
+        },
+        {
+          "size": "clamp(2.188rem, 0.658rem + 4.248vw, 4.375rem)",
+          "slug": "70",
+          "name": "70"
+        },
+        {
+          "size": "clamp(2.5rem, 0.752rem + 4.854vw, 5rem)",
+          "slug": "80",
+          "name": "80"
+        },
+        {
+          "size": "clamp(2.813rem, 0.846rem + 5.461vw, 5.625rem)",
+          "slug": "90",
+          "name": "90"
+        },
+        {
+          "size": "clamp(3.125rem, 0.941rem + 6.068vw, 6.25rem)",
+          "slug": "100",
+          "name": "100"
+        },
+        {
+          "size": "clamp(3.438rem, 1.035rem + 6.675vw, 6.875rem)",
+          "slug": "110",
+          "name": "110"
+        },
+        {
+          "size": "clamp(3.75rem, 1.129rem + 7.282vw, 7.5rem)",
+          "slug": "120",
+          "name": "120"
+        }
+      ],
+      "units": [
+        "px"
+      ],
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": [
+        "top",
+        "bottom"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontStyle": false,
+      "fontWeight": false,
+      "lineHeight": false,
+      "letterSpacing": false,
+      "textDecoration": false,
+      "textTransform": false,
+      "dropCap": false,
+      "fluid": false,
+      "fontSizes": [
+        {
+          "name": "H1",
+          "size": "clamp(2.25rem, 1.096rem + 3.205vw, 3.5rem)",
+          "slug": "heading-1"
+        },
+        {
+          "name": "H2",
+          "size": "clamp(2rem, 1.077rem + 2.564vw, 3rem)",
+          "slug": "heading-2"
+        },
+        {
+          "name": "H3",
+          "size": "clamp(1.5rem, 0.577rem + 2.564vw, 2.5rem)",
+          "slug": "heading-3"
+        },
+        {
+          "name": "H4",
+          "size": "clamp(1.25rem, 0.558rem + 1.923vw, 2rem)",
+          "slug": "heading-4"
+        },
+        {
+          "name": "H5",
+          "size": "clamp(1rem, 0.538rem + 1.282vw, 1.5rem)",
+          "slug": "heading-5"
+        },
+        {
+          "name": "H6",
+          "size": "clamp(1rem, 0.769rem + 0.641vw, 1.25rem)",
+          "slug": "heading-6"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "Montserrat, serif",
+          "slug": "primary",
+          "fontFace": [
+            {
+              "fontFamily": "Montserrat",
+              "fontStyle": "normal",
+              "fontWeight": "300 800",
+              "src": [
+                "https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2",
+                "https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2",
+                "https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2",
+                "https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2",
+                "https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Figtree, sans-serif",
+          "slug": "secondary",
+          "fontFace": [
+            {
+              "fontFamily": "Figtree",
+              "fontStyle": "normal",
+              "fontWeight": "300 900",
+              "src": [
+                "https://fonts.gstatic.com/s/figtree/v6/_Xms-HUzqDCFdgfMm4q9DaRvziissg.woff2",
+                "https://fonts.gstatic.com/s/figtree/v6/_Xms-HUzqDCFdgfMm4S9DaRvzig.woff2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "useRootPaddingAwareAlignments": true,
+    "blocks": {
+      "core/heading": {
+        "typography": {
+          "fontSizes": []
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontWeight": true
+        }
+      },
+      "core/image": {
+        "lightbox": {
+          "allowEditing": false
+        }
+      }
+    },
+    "custom": {}
+  }
+}

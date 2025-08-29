@@ -1,0 +1,6 @@
+@import "./utilities/_reset.css";
+@import "./utilities/_all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

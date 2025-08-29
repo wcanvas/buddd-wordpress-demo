@@ -1,0 +1,30 @@
+/* Fix ACF Styles for the clone support heading. */
+.block-editor-block-list__layout .support-heading-acf-field__tag {
+	@apply !wcb-w-[14%] wcb-inline-block wcb-align-middle;
+}
+
+.block-editor-block-list__layout .support-heading-acf-field__text {
+	@apply !wcb-w-[85%] wcb-inline-block wcb-align-middle;
+}
+
+.wp-block-post-title {
+	@apply wcb-mb-6;
+}
+
+/* Container for all singles */
+body .wp-block-post-content> :where(:not(.alignleft, .alignright, .alignfull)),
+body .wp-block-post-title {
+	@apply !wcb-max-w-screen-md !wcb-mx-auto;
+}
+
+/* Container for pages */
+body.post-type-page .is-layout-constrained> :where(:not(.alignleft, .alignright, .alignfull)),
+body.post-type-page .wp-block-post-title {
+	@apply !wcb-max-w-screen-xl;
+}
+
+/* Container for full site editor view */
+body .edit-site-block-editor__block-list .is-layout-constrained> :where(:not(.alignleft, .alignright, .alignfull)),
+body.site-editor-php .wp-block-post-title {
+	@apply !wcb-max-w-screen-xl;
+}

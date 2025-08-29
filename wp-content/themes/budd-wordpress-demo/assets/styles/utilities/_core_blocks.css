@@ -1,0 +1,67 @@
+/* Core blocks styles - Tailwind utility classes for styling WordPress core blocks like quotes, paragraphs, headings etc. */
+
+/* Blockquote */
+.wp-block-quote {
+	@apply wcb-border wcb-border-solid wcb-border-secondary wcb-p-6 md:wcb-p-10 wcb-mb-5;
+}
+
+.wp-block-quote p {
+	@apply wcb-title wcb-title--heading-4 wcb-mb-5 wcb-font-light before:wcb-content-['“'] after:wcb-content-['”'];
+}
+
+.wp-block-quote cite {
+	@apply wcb-title wcb-title--heading-5 wcb-font-bold;
+}
+
+/* Pullquote */
+.wp-block-pullquote blockquote {
+	@apply wcb-flex wcb-flex-col wcb-items-center;
+}
+
+.wp-block-pullquote blockquote p,
+.wp-block-pullquote blockquote cite {
+	@apply wcb-text-center;
+}
+
+/* Paragraph */
+.wp-block-paragraph {
+	@apply wcb-paragraph;
+}
+
+/* List */
+.wp-block-list {
+	@apply wcb-ml-10;
+}
+
+.wp-block-list li {
+	@apply wcb-paragraph wcb-mb-1;
+}
+
+/* Headings */
+.wp-block-heading {
+	@apply wcb-title;
+}
+
+h1.wp-block-heading {
+	@apply wcb-text-heading-1;
+}
+
+h2.wp-block-heading {
+	@apply wcb-text-heading-2;
+}
+
+h3.wp-block-heading {
+	@apply wcb-text-heading-3;
+}
+
+h4.wp-block-heading {
+	@apply wcb-text-heading-4;
+}
+
+h5.wp-block-heading {
+	@apply wcb-text-heading-5;
+}
+
+h6.wp-block-heading {
+	@apply wcb-text-heading-6;
+}

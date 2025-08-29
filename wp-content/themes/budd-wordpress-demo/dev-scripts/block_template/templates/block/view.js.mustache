@@ -1,0 +1,31 @@
+{{^isPluginVariant}}
+import ACFBlock from '../../assets/js/utils/blocks';
+
+/**
+ * Custom {{camelCaseName}} Block, describe your block here.
+ */
+class {{camelCaseName}}View {
+	/**
+	 * Constructor method
+	 *
+	 * @param {HTMLElement} block
+	 */
+	constructor( block ) {
+	  // This Js file only runs in the frontend view.
+	}
+
+	/**
+	 * The name of your block, don't modify this static method!!
+	 *
+	 * @return {string} The name of your block
+	 */
+	static getName() {
+		return '{{slug}}';
+	}
+
+	// Your methods
+}
+
+new ACFBlock( {{camelCaseName}}View );
+
+{{/isPluginVariant}}

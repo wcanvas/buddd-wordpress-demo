@@ -1,0 +1,162 @@
+.interface-complementary-area__fill,
+.editor-sidebar,
+.edit-site-global-styles-sidebar {
+	width: var(--wc-sidebar-size, 280px) !important;
+}
+
+/* JQuery UI Styles */
+.ui-dialog {
+	.ui-resizable-n {
+		height: 2px;
+		top: 0;
+	}
+
+	.ui-resizable-e {
+		width: 2px;
+		right: 0;
+	}
+
+	.ui-resizable-s {
+		height: 2px;
+		bottom: 0;
+	}
+
+	.ui-resizable-w {
+		width: 2px;
+		left: 0;
+	}
+
+	.ui-resizable-se,
+	.ui-resizable-sw,
+	.ui-resizable-ne,
+	.ui-resizable-nw {
+		width: 7px;
+		height: 7px;
+	}
+
+	.ui-resizable-se {
+		right: 0;
+		bottom: 0;
+	}
+
+	.ui-resizable-sw {
+		left: 0;
+		bottom: 0;
+	}
+
+	.ui-resizable-ne {
+		right: 0;
+		top: 0;
+	}
+
+	.ui-resizable-nw {
+		left: 0;
+		top: 0;
+	}
+}
+
+.ui-draggable {
+	.ui-dialog-titlebar {
+		cursor: move;
+	}
+}
+
+.ui-draggable-handle {
+	/* stylelint-disable */
+	-ms-touch-action: none;
+	/* stylelint-enable */
+	touch-action: none;
+}
+
+.ui-resizable {
+	position: relative;
+
+	&-handle {
+		position: absolute;
+		font-size: 0.1px;
+		display: block;
+		/* stylelint-disable */
+		-ms-touch-action: none;
+		/* stylelint-enable */
+		touch-action: none;
+	}
+
+	&-disabled .ui-resizable-handle,
+	&-autohide .ui-resizable-handle {
+		display: none;
+	}
+
+	&-n {
+		cursor: n-resize;
+		height: 7px;
+		width: 100%;
+		top: -5px;
+		left: 0;
+	}
+
+	&-s {
+		cursor: s-resize;
+		height: 7px;
+		width: 100%;
+		bottom: -5px;
+		left: 0;
+	}
+
+	&-e {
+		cursor: e-resize;
+		width: 7px;
+		right: -5px;
+		top: 0;
+		height: 100%;
+	}
+
+	/* resize handle custom styles. */
+	&-w {
+		cursor: w-resize;
+		width: 12px;
+		left: -5px;
+		top: 0;
+		height: 100%;
+		opacity: 0.5;
+		transition:
+			width 0.2s ease,
+			background-color 0.2s ease;
+
+		&:hover {
+			width: 14px;
+			background-color: var(--wp-admin-theme-color);
+		}
+	}
+
+	&-se {
+		cursor: se-resize;
+		width: 12px;
+		height: 12px;
+		right: 1px;
+		bottom: 1px;
+	}
+
+	&-sw {
+		cursor: sw-resize;
+		width: 9px;
+		height: 9px;
+		left: -5px;
+		bottom: -5px;
+	}
+
+	&-nw {
+		cursor: nw-resize;
+		width: 9px;
+		height: 9px;
+		left: -5px;
+		top: -5px;
+	}
+
+	&-ne {
+		cursor: ne-resize;
+		width: 9px;
+		height: 9px;
+		right: -5px;
+		top: -5px;
+	}
+}

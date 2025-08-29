@@ -1,0 +1,44 @@
+{
+  "a11y-dialog": {
+    "handle": "a11y-dialog",
+    "globalObject": "A11yDialog",
+    "jsPath": "node_modules/a11y-dialog/dist/a11y-dialog.min.js",
+    "cssPath": null,
+    "manual": true
+  },
+  "axios": {
+    "handle": "axios",
+    "globalObject": "axios",
+    "jsPath": "node_modules/axios/dist/axios.min.js",
+    "cssPath": null,
+    "manual": true
+  },
+  "gsap": {
+    "handle": "gsap",
+    "globalObject": "gsap",
+    "jsPath": "node_modules/gsap/dist/gsap.min.js",
+    "cssPath": null,
+    "manual": false
+  },
+  "gsap/ScrollTrigger": {
+    "handle": "gsap/ScrollTrigger",
+    "globalObject": "ScrollTrigger",
+    "jsPath": "node_modules/gsap/dist/ScrollTrigger.min.js",
+    "cssPath": null,
+    "manual": false
+  },
+  "swiper": {
+    "handle": "swiper",
+    "globalObject": "Swiper",
+    "jsPath": "node_modules/swiper/swiper-bundle.min.js",
+    "cssPath": "node_modules/swiper/swiper-bundle.min.css",
+    "manual": true
+  },
+  "tom-select": {
+    "handle": "tom-select",
+    "globalObject": "TomSelect",
+    "jsPath": "node_modules/tom-select/dist/js/tom-select.complete.min.js",
+    "cssPath": "node_modules/tom-select/dist/css/tom-select.min.css",
+    "manual": true
+  }
+}

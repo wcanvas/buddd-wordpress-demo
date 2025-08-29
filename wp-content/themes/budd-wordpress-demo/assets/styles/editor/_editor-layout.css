@@ -1,0 +1,30 @@
+/* makes all acf blocks take full width in the editor when using
+ "useRootPaddingAwareAlignments": true on the theme.json file. */
+.editor-styles-wrapper .block-editor-block-list__layout.has-global-padding>.acf-block-component {
+	@apply !wcb-max-w-none wcb-mt-0;
+
+	margin-right: calc(var(--wp--style--root--padding-right) * -1) !important;
+	margin-left: calc(var(--wp--style--root--padding-left) * -1) !important;
+}
+
+/* Block placeholder styles. */
+.editor-styles-wrapper .wcb-block-placeholder {
+	@apply wcb-relative;
+}
+
+.editor-styles-wrapper .wcb-block-placeholder img {
+	@apply wcb-opacity-20 wcb-w-full;
+}
+
+.editor-styles-wrapper .wcb-block-placeholder span {
+	@apply wcb-absolute wcb-top-1/2 wcb-left-1/2 wcb-translate-x-[-50%] wcb-translate-y-[-50%] wcb-bg-primary wcb-text-secondary wcb-p-10 wcb-text-center;
+}
+
+/* Block editor contents alerts. */
+.editor-styles-wrapper .content-alert {
+	@apply wcb-flex wcb-items-center wcb-p-5 wcb-my-2.5 wcb-border wcb-border-black wcb-border-solid;
+}
+
+.editor-styles-wrapper .content-alert::before {
+	@apply wcb-content-['!'] wcb-flex wcb-items-center wcb-justify-center wcb-w-[25px] wcb-h-[25px] wcb-rounded-full wcb-mr-2.5 wcb-border wcb-border-black wcb-p-2.5 wcb-border-solid wcb-shrink-0;
+}

@@ -1,0 +1,13 @@
+@layer components {
+	.wcb-flex-col-center {
+		@apply wcb-flex wcb-flex-col wcb-items-center wcb-justify-center;
+	}
+
+	.wcb-after-backdrop {
+		@apply after:wcb-content-[''] after:wcb-block after:wcb-w-full after:wcb-h-full after:wcb-absolute after:wcb-top-0 after:wcb-left-0 after:wcb-bg-black/40;
+	}
+
+	.wcb-img-full-cover {
+		@apply wcb-w-full wcb-h-full wcb-object-cover wcb-object-center;
+	}
+}

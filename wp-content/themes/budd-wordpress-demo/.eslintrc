@@ -1,0 +1,35 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [ "plugin:@wordpress/eslint-plugin/esnext", "prettier" ],
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"rules": {
+		"no-useless-constructor": 0,
+		"no-unused-vars": 0,
+		"comma-dangle": 0,
+		"eqeqeq": 0,
+		"no-bitwise": 0,
+		"no-mixed-operators": 0,
+		"jsdoc/check-line-alignment": 0,
+		"space-before-function-paren": 0,
+		"no-console": [ "error", { "allow": [ "error", "warn" ] } ]
+	},
+	"globals": {
+		"gsap": true,
+		"ScrollTrigger": true,
+		"ScrollSmoother": true,
+		"require": true,
+		"__dirname": true,
+		"process": true,
+		"module": true,
+		"jQuery": true,
+		"YT": true,
+		"Vimeo": true,
+		"apiArgs": true
+	},
+	"ignorePatterns": [ "node_modules/", "assets/build/", "dependencies/" ]
+}

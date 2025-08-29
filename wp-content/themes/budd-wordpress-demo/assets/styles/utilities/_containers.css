@@ -1,0 +1,39 @@
+@tailwind components;
+
+@layer components {
+	.wcb-container {
+		max-width: calc(theme('screens.xl') + (var(--wp--style--root--padding-right) * 2));
+		width: 100%;
+		padding-right: var(--wp--style--root--padding-right);
+		padding-left: var(--wp--style--root--padding-left);
+		margin-inline: auto;
+	}
+
+	.wcb-container-s {
+		max-width: calc(theme('screens.lg') + (var(--wp--style--root--padding-right) * 2));
+		width: 100%;
+		padding-right: var(--wp--style--root--padding-right);
+		padding-left: var(--wp--style--root--padding-left);
+		margin-inline: auto;
+	}
+
+	.wcb-container-xl {
+		max-width: calc(theme('screens.2xl') + (var(--wp--style--root--padding-right) * 2));
+		width: 100%;
+		padding-right: var(--wp--style--root--padding-right);
+		padding-left: var(--wp--style--root--padding-left);
+		margin-inline: auto;
+	}
+}
+
+/* Containers for core blocks */
+
+/* Container for pages */
+body.page .is-layout-constrained> :where(:not(.alignleft, .alignright, .alignfull)) {
+	@apply !wcb-max-w-screen-xl;
+}
+
+/* Container for all singles */
+body.single .is-layout-constrained> :where(:not(.alignleft, .alignfull, .alignright)) {
+	@apply !wcb-max-w-screen-xl;
+}

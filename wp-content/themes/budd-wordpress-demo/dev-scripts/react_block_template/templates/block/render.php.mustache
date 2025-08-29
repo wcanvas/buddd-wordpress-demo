@@ -1,0 +1,21 @@
+<?php
+/**
+ * Block Template: {{slug}}
+ *
+ * @package WCB
+ */
+
+defined( 'ABSPATH' ) || die();
+
+use WCB\Block\BlockWrapper;
+
+$wcb_block_data = BlockWrapper::get_global_block_wrapper_data( $block );
+
+?>
+
+<section <?php echo wp_kses_post( $wcb_block_data ); ?>>
+	<div class="wcb-counter-block">
+		<h4 class="wcb-counter-label"><?php esc_html_e( 'Counter:', 'wcanvas-boilerplate' ); ?> <span class="wcb-counter-value">0</span></h4>
+		<button class="wcb-counter-button"><?php esc_html_e( 'Increment', 'wcanvas-boilerplate' ); ?></button>
+	</div>
+</section>

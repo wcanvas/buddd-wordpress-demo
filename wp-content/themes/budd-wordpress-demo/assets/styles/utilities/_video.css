@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+	.wcb-support-video {
+		@apply wcb-relative wcb-w-full;
+	}
+
+	.wcb-support-video img {
+		@apply wcb-w-full wcb-h-auto;
+	}
+
+	.wcb-support-video__play {
+		@apply wcb-absolute wcb-inset-0 wcb-m-auto wcb-h-max wcb-block wcb-bg-contain wcb-bg-transparent wcb-border-none wcb-cursor-pointer;
+	}
+
+	.wcb-support-video iframe {
+		@apply wcb-absolute wcb-top-0 wcb-left-0 wcb-w-full wcb-h-full wcb-block;
+	}
+
+	.wcb-support-video__video {
+		@apply wcb-w-full wcb-h-full wcb-object-cover;
+	}
+}

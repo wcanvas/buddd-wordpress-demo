@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "valeryanm.vscode-phpsab",
+    "dbaeumer.vscode-eslint",
+    "xdebug.php-debug",
+    "bmewburn.vscode-intelephense-client",
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "ms-vscode-remote.remote-containers",
+    "bradlc.vscode-tailwindcss",
+    "mhutchie.git-graph"
+  ]
+}

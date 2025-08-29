@@ -1,0 +1,173 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+variables:
+  THEME_DIR: wp-content/themes/wcanvas-boilerplate
+  CONTAINER_RELEASE_IMAGE: whitecanvas/builder:1.0.6
+  PROD_SERVER_USER: boilerplatefs1
+  STG_SERVER_USER: boilerplat1stg
+  DEV_SERVER_USER: boilerplat3dev
+
+stages:
+  - build
+  - test
+  - deploy
+
+.setup_ssh_agent: &setup_agent
+  before_script:
+    - "which rsync || ( apt-get update -y && apt-get install rsync -y )"
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_WPENGINE")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - cd $THEME_DIR
+    - rm .gitignore
+    - ./dev-scripts/build_modules.sh
+    - git rm --cached dev-scripts/build_modules.sh
+    - echo "dev-scripts/build_modules.sh" > .gitignore
+    - git config user.email "facu@wcanvas.com"
+    - git config user.name "Facundo Gamond"
+    - git add --all && git commit -m "npm build"
+    - cd ../../..
+
+  artifacts:
+    paths:
+      - $THEME_DIR/assets/build/
+      - $THEME_DIR/assets/vendor
+
+build_artifacts:
+  stage: build
+  image: $CONTAINER_RELEASE_IMAGE
+  script:
+    - cd $THEME_DIR
+    - npm ci --cache $CI_PROJECT_DIR/.npm --prefer-offline
+    - npm run build
+    - composer install --no-dev
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - $CI_PROJECT_DIR/.npm/
+  artifacts:
+    paths:
+      - $THEME_DIR/node_modules/
+      - $THEME_DIR/assets/build/
+      - $THEME_DIR/vendor
+  tags:
+    - wcanvas
+
+code_sniffer_php:
+  stage: test
+  image: $CONTAINER_RELEASE_IMAGE
+  script:
+    - cd $THEME_DIR
+    - composer install
+    - composer run report-cs
+  artifacts:
+    reports:
+      junit: $THEME_DIR/report-php.xml
+  tags:
+    - wcanvas
+
+stylelint_scss:
+  stage: test
+  image: $CONTAINER_RELEASE_IMAGE
+  script:
+    - cd $THEME_DIR
+    - npm run lint:css:report
+  artifacts:
+    paths:
+      - $THEME_DIR/node_modules/
+    reports:
+      junit:
+        - $THEME_DIR/report-css.xml
+  tags:
+    - wcanvas
+
+eslint_js:
+  stage: test
+  image: $CONTAINER_RELEASE_IMAGE
+  script:
+    - cd $THEME_DIR
+    - npm run lint:js:report --quiet
+  artifacts:
+    paths:
+      - $THEME_DIR/node_modules/
+    reports:
+      junit:
+        - $THEME_DIR/report-js.xml
+  tags:
+    - wcanvas
+
+.prepare_wpe_push: &prepare_push
+  - echo "Preparing temporary commit for WP Engine push..."
+  - |
+    if [ -f .hide_dev_files ]; then
+      echo "Reading .hide_dev_files and removing specified entries..."
+      # Use POSIX-compliant loop to read file line by line
+      while IFS= read -r line || [ -n "$line" ]; do
+        # Trim leading/trailing whitespace (optional but good practice)
+        line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+        # Skip empty lines or lines starting with #
+        if [ -z "$line" ] || echo "$line" | grep -q '^#'; then
+          continue
+        fi
+        echo "Attempting to remove '$line'..."
+        # Use quotes to handle potential spaces
+        rm -rf "$line"
+      done < .hide_dev_files
+      echo "Finished processing .hide_dev_files."
+    else
+      echo ".hide_dev_files not found. No specific files removed based on this list."
+    fi
+  - git add -A
+  - git commit -m "CI temporary commit - Exclude dev files specified in .hide_dev_files [skip ci]"
+  - echo "Temporary commit created. HEAD is now ready for WP Engine push."
+
+production:
+  stage: deploy
+  <<: *setup_agent
+  script:
+    - *prepare_push
+    - rsync -av --delete $THEME_DIR/ $PROD_SERVER_USER@$PROD_SERVER_USER.ssh.wpengine.net:~/sites/$PROD_SERVER_USER/$THEME_DIR
+    - git push git@git.wpengine.com:$PROD_SERVER_USER.git HEAD:refs/heads/master --force
+  environment:
+    name: production
+    url: https://$PROD_SERVER_USER.wpengine.com/
+  rules:
+    - when: manual
+  tags:
+    - wcanvas
+
+staging:
+  stage: deploy
+  <<: *setup_agent
+  script:
+    - *prepare_push
+    - rsync -av --delete $THEME_DIR/ $STG_SERVER_USER@$STG_SERVER_USER.ssh.wpengine.net:~/sites/$STG_SERVER_USER/$THEME_DIR
+    - git push git@git.wpengine.com:$STG_SERVER_USER.git HEAD:refs/heads/master --force
+  environment:
+    name: staging
+    url: https://$STG_SERVER_USER.wpengine.com/
+  rules:
+    - when: manual
+  tags:
+    - wcanvas
+
+development:
+  stage: deploy
+  <<: *setup_agent
+  script:
+    - *prepare_push
+    - rsync -av --delete $THEME_DIR/ $DEV_SERVER_USER@$DEV_SERVER_USER.ssh.wpengine.net:~/sites/$DEV_SERVER_USER/$THEME_DIR
+    - git push git@git.wpengine.com:$DEV_SERVER_USER.git HEAD:refs/heads/master --force
+  environment:
+    name: development
+    url: https://$DEV_SERVER_USER.wpengine.com/
+  rules:
+    - when: manual
+  tags:
+    - wcanvas

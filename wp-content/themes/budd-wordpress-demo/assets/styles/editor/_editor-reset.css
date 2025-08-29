@@ -1,0 +1,34 @@
+/* If you want to override these styles in your individual block css you might
+need to use !important (because of the .editor-styles-wrapper) */
+
+/* These styles should match the front-end reset styles, beware of the
+specificity issues (because of the .editor-styles-wrapper) */
+
+.editor-styles-wrapper {
+	@apply wcb-font-primary;
+}
+
+.editor-styles-wrapper * {
+	@apply wcb-box-border wcb-antialiased;
+}
+
+.editor-styles-wrapper picture {
+	@apply wcb-block;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_where_exception */
+.editor-styles-wrapper :where([class*="wp-block-wcb-"]) img {
+	max-width: inherit;
+	height: inherit;
+}
+
+/* Removes the padding from the ACF block wrapper. This way the styles from the editor supports only get to the actual block container. */
+.editor-styles-wrapper :where(.acf-block-component) {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Make every element with class wp-block-wcb-* margin block 0 */
+[class*="wp-block-wcb-"] * {
+	@apply wcb-m-0 wcb-ps-0 wcb-pe-0;
+}

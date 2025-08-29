@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  builder:
+    container_name: boilerplate-fse
+    image: whitecanvas/builder-v8:1.0.6
+    volumes:
+      - ./:/media/
+      - ~/.gitconfig:/root/.gitconfig # Mount .gitconfig for Git configuration
+      - ~/.ssh:/root/.ssh:ro # Mount .ssh directory for SSH keys (read-only)
+    extra_hosts:
+      - "boilerplate-fse.local:192.168.1.6"
+    command:
+      - sh
+    tty: true
+    networks:
+      - boilerplate
+networks:
+  boilerplate:

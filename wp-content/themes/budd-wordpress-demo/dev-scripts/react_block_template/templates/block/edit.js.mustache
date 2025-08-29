@@ -1,0 +1,32 @@
+import { useState } from '@wordpress/element';
+import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
+import './editor.scss';
+
+export default function Edit() {
+	const blockProps = useBlockProps({
+		className: 'alignfull',
+	});
+
+	const [count, setCount] = useState(0);
+
+	const incrementCounter = () => {
+		setCount( ( prevCount ) => prevCount + 1 );
+	};
+
+	return (
+		<section { ...blockProps }>
+			<div className="wcb-counter-block">
+				<h4 className="wcb-counter-label">
+					{ __( 'Counter:', 'wcanvas-boilerplate' ) } <span className="wcb-counter-value">{count}</span>
+				</h4>
+				<button
+					className="wcb-counter-button"
+					onClick={incrementCounter}
+				>
+					{ __( 'Increment', 'wcanvas-boilerplate' ) }
+				</button>
+			</div>
+		</section>
+	);
+}

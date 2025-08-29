@@ -1,0 +1,21 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Find all counter blocks on the page
+    const counterBlocks = document.querySelectorAll('.wp-block-{{namespace}}-{{slug}}');
+
+    // Initialize each counter block
+    counterBlocks.forEach(block => {
+        const counterValue = block.querySelector('.wcb-counter-value');
+        const incrementButton = block.querySelector('.wcb-counter-button');
+
+        // Set initial counter value
+        let count = 0;
+
+        // Add click event listener to increment button
+        if (incrementButton && counterValue) {
+            incrementButton.addEventListener('click', function() {
+                count++;
+                counterValue.textContent = count;
+            });
+        }
+    });
+});

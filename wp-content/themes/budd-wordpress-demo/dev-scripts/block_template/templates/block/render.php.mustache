@@ -1,0 +1,24 @@
+{{^isPluginVariant}}
+{{#isDynamicVariant}}
+<?php
+/**
+ * Block Template: {{slug}}
+ *
+ * @package WCB
+ */
+
+defined( 'ABSPATH' ) || die();
+
+use WCB\Block\BlockWrapper;
+
+$wcb_block_data = BlockWrapper::get_global_block_wrapper_data( $block );
+
+?>
+
+<section <?php echo wp_kses_post( $wcb_block_data ); ?>>
+	<div class="wcb-{{slug}}">
+		<h1>Hello from the {{title}} block!</h1>
+	</div>
+</section>
+{{/isDynamicVariant}}
+{{/isPluginVariant}}

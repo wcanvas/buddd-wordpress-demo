@@ -1,0 +1,16 @@
+<?php
+/**
+ * Component: {{name}}
+ *
+ * @package WCB
+ */
+
+defined( 'ABSPATH' ) || die();
+
+$wcb_label = isset( $args['label'] ) ? $args['label'] : 'Hello World!';
+
+?>
+
+<div class="wcb-c-{{name}}">
+	<?php echo esc_html( $wcb_label ); ?>
+</div>
