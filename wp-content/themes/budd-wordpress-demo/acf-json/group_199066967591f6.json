@@ -1,9 +1,9 @@
 {
-  "key": "group_198f7128b81c9d",
+  "key": "group_199066967591f6",
   "title": "Block: Navbar",
   "fields": [
     {
-      "key": "field_198f712f72277f",
+      "key": "field_1990669a80030e",
       "label": "Content",
       "name": "",
       "aria-label": "",
@@ -21,12 +21,12 @@
       "endpoint": 0
     },
     {
-      "key": "field_198f712f722003",
+      "key": "field_1990669a8000ea",
       "label": "Logo",
       "name": "logo",
       "aria-label": "",
       "type": "image",
-      "instructions": "The site logo displayed on the left.",
+      "instructions": "Upload the site logo image",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -46,12 +46,12 @@
       "preview_size": "medium"
     },
     {
-      "key": "field_198f712f722735",
+      "key": "field_1990669a800b93",
       "label": "Logo Link",
       "name": "logo_link",
       "aria-label": "",
       "type": "link",
-      "instructions": "The URL the logo links to, typically the homepage.",
+      "instructions": "The URL the logo links to, typically the homepage",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -61,18 +61,18 @@
       },
       "return_format": "array",
       "default_value": {
-        "url": "/",
+        "url": "#",
         "title": "Home",
         "target": ""
       }
     },
     {
-      "key": "field_198f712f72297a",
+      "key": "field_1990669a800c88",
       "label": "Navigation Links",
       "name": "navigation_links",
       "aria-label": "",
       "type": "repeater",
-      "instructions": "A list of the main text-based navigation links.",
+      "instructions": "Add the main navigation links",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -89,7 +89,7 @@
       "rows_per_page": 20,
       "sub_fields": [
         {
-          "key": "field_198f712f722662",
+          "key": "field_1990669a800cf3",
           "label": "Navigation Link",
           "name": "",
           "aria-label": "",
@@ -107,12 +107,12 @@
           "endpoint": 0
         },
         {
-          "key": "field_198f712f722e01",
+          "key": "field_1990669a800a5a",
           "label": "Link",
           "name": "link",
           "aria-label": "",
           "type": "link",
-          "instructions": "A single navigation item, containing its text and URL.",
+          "instructions": "Navigation item with text and URL",
           "required": 0,
           "conditional_logic": 0,
           "wrapper": {
@@ -130,12 +130,12 @@
       ]
     },
     {
-      "key": "field_198f712f722e4a",
+      "key": "field_1990669a800a71",
       "label": "Contact Button",
       "name": "contact_button",
       "aria-label": "",
       "type": "link",
-      "instructions": "The secondary (outline style) button.",
+      "instructions": "The secondary (outline style) button",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -145,18 +145,18 @@
       },
       "return_format": "array",
       "default_value": {
-        "url": "#",
+        "url": "#contact",
         "title": "Contact us",
         "target": ""
       }
     },
     {
-      "key": "field_198f712f722d6b",
+      "key": "field_1990669a800f3b",
       "label": "Download Button",
       "name": "download_button",
       "aria-label": "",
       "type": "link",
-      "instructions": "The primary (solid style) call-to-action button.",
+      "instructions": "The primary (solid style) call-to-action button",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -166,7 +166,7 @@
       },
       "return_format": "array",
       "default_value": {
-        "url": "#",
+        "url": "#download",
         "title": "Download the app",
         "target": ""
       }
@@ -188,7 +188,7 @@
   "instruction_placement": "label",
   "hide_on_screen": "",
   "active": true,
-  "description": "This block renders the main website navigation bar. It features a logo on the left, a central list of navigation links, and two call-to-action buttons on the right. All elements, including the logo, links, and buttons, are fully editable.",
+  "description": "This block renders the main website navigation bar with logo, navigation links, and call-to-action buttons.",
   "show_in_rest": 0,
-  "modified": 1756491872
+  "modified": 1756749211
 }

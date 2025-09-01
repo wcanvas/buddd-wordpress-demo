@@ -1,9 +1,9 @@
 {
-  "key": "group_198f710754c2a1",
+  "key": "group_19906682333d20",
   "title": "Block: Cards",
   "fields": [
     {
-      "key": "field_198f710c3a8d6a",
+      "key": "field_1990668709feaa",
       "label": "Content",
       "name": "",
       "aria-label": "",
@@ -21,9 +21,9 @@
       "endpoint": 0
     },
     {
-      "key": "field_198f710c3a8a71",
-      "label": "Pre-heading",
-      "name": "pre_heading",
+      "key": "field_1990668709f8d5",
+      "label": "Preheading",
+      "name": "preheading",
       "aria-label": "",
       "type": "text",
       "instructions": "The small text label above the main heading",
@@ -41,9 +41,9 @@
       "append": ""
     },
     {
-      "key": "field_198f710c3a8ae2",
+      "key": "field_1990668709ff5e",
       "label": "Heading",
-      "name": "heading_group",
+      "name": "heading",
       "aria-label": "",
       "type": "group",
       "instructions": "",
@@ -57,7 +57,7 @@
       "layout": "block",
       "sub_fields": [
         {
-          "key": "field_198f710c3a89dc",
+          "key": "field_1990668709f99c",
           "label": "Level",
           "name": "level",
           "aria-label": "",
@@ -87,11 +87,11 @@
           "placeholder": ""
         },
         {
-          "key": "field_198f710c3a8f47",
+          "key": "field_1990668709ff1f",
           "label": "Text",
           "name": "text",
           "aria-label": "",
-          "type": "text",
+          "type": "wysiwyg",
           "instructions": "The main title for the section",
           "required": 0,
           "conditional_logic": 0,
@@ -100,18 +100,18 @@
             "class": "",
             "id": ""
           },
-          "default_value": "Stay Active and Healthy",
-          "maxlength": "",
-          "placeholder": "",
-          "prepend": "",
-          "append": ""
+          "default_value": "Stay Active<br />and Healthy",
+          "tabs": "visual",
+          "toolbar": "basic",
+          "media_upload": 0,
+          "delay": 0
         }
       ]
     },
     {
-      "key": "field_198f710c3a8cc1",
-      "label": "Button",
-      "name": "button",
+      "key": "field_1990668709fb17",
+      "label": "CTA Button",
+      "name": "cta_button",
       "aria-label": "",
       "type": "link",
       "instructions": "The call-to-action button",
@@ -122,15 +122,15 @@
         "class": "",
         "id": ""
       },
-      "return_format": "array",
       "default_value": {
         "url": "#",
         "title": "Learn more",
-        "target": ""
-      }
+        "target": "null"
+      },
+      "return_format": "array"
     },
     {
-      "key": "field_198f710c3a8552",
+      "key": "field_1990668709fbb0",
       "label": "Feature Cards",
       "name": "feature_cards",
       "aria-label": "",
@@ -148,11 +148,11 @@
       "min": 0,
       "max": 0,
       "collapsed": "",
-      "button_label": "Add Feature Card",
+      "button_label": "Add Card",
       "rows_per_page": 20,
       "sub_fields": [
         {
-          "key": "field_198f710c3a8f0b",
+          "key": "field_1990668709fc73",
           "label": "Card",
           "name": "",
           "aria-label": "",
@@ -170,12 +170,12 @@
           "endpoint": 0
         },
         {
-          "key": "field_198f710c3a84ff",
+          "key": "field_1990668709ff21",
           "label": "Image",
           "name": "image",
           "aria-label": "",
           "type": "image",
-          "instructions": "The main image for the feature card",
+          "instructions": "The image for the card (recommended size: 240x311)",
           "required": 0,
           "conditional_logic": 0,
           "wrapper": {
@@ -195,12 +195,12 @@
           "preview_size": "medium"
         },
         {
-          "key": "field_198f710c3a89db",
+          "key": "field_1990668709f072",
           "label": "Title",
           "name": "title",
           "aria-label": "",
           "type": "text",
-          "instructions": "The title of the feature",
+          "instructions": "The title of the card",
           "required": 0,
           "conditional_logic": 0,
           "wrapper": {
@@ -215,12 +215,12 @@
           "append": ""
         },
         {
-          "key": "field_198f710c3a875c",
+          "key": "field_1990668709f617",
           "label": "Description",
           "name": "description",
           "aria-label": "",
           "type": "textarea",
-          "instructions": "The descriptive text for the feature",
+          "instructions": "The descriptive text for the card",
           "required": 0,
           "conditional_logic": 0,
           "wrapper": {
@@ -253,7 +253,7 @@
   "instruction_placement": "label",
   "hide_on_screen": "",
   "active": true,
-  "description": "This block is designed to showcase key features in a two-column layout. The left column contains introductory content including a pre-heading, a main heading, and a call-to-action button. The right column displays a repeatable set of feature cards, where each card consists of an image, a title, and a short description.",
+  "description": "This block displays a features section with a two-column layout. The left column contains a preheading, a main heading, and a call-to-action button. The right column features a horizontal row of info cards, each with an image, title, and description.",
   "show_in_rest": 0,
-  "modified": 1756491727
+  "modified": 1756749131
 }

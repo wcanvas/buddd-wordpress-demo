@@ -1,17 +1,13 @@
 import ACFBlock from '../../assets/js/utils/blocks';
 
 /**
- * Navbar - Client-side functionality
+ * NavbarView - Client-side functionality for the Navbar block
  */
 class NavbarView {
 	constructor(block) {
 		this.block = block;
-
-		// Selectors
-		this.toggleButton = this.block.querySelector('.js-navbar-toggle');
-		this.menu = this.block.querySelector('.js-navbar-menu');
-		this.openIcon = this.block.querySelector('.js-navbar-open-icon');
-		this.closeIcon = this.block.querySelector('.js-navbar-close-icon');
+		this.isMenuOpen = false;
+		this.lastScrollY = window.scrollY;
 
 		this.init();
 	}
@@ -21,23 +17,60 @@ class NavbarView {
 	}
 
 	init() {
-		if (!this.toggleButton || !this.menu || !this.openIcon || !this.closeIcon) {
-			return;
-		}
+		this.cacheDOMElements();
 		this.addEventListeners();
 	}
 
+	cacheDOMElements() {
+		this.header = this.block.querySelector('.js-navbar-header');
+		this.menuToggle = this.block.querySelector('.js-menu-toggle');
+		this.mobileMenu = this.block.querySelector('.js-mobile-menu');
+		this.hamburgerIcon = this.block.querySelector('.js-hamburger-icon');
+		this.closeIcon = this.block.querySelector('.js-close-icon');
+	}
+
 	addEventListeners() {
-		this.toggleButton.addEventListener('click', this.toggleMenu.bind(this));
+		if (this.menuToggle) {
+			this.menuToggle.addEventListener('click', this.toggleMenu.bind(this));
+		}
+		window.addEventListener('scroll', this.handleScroll.bind(this), { passive: true });
 	}
 
 	toggleMenu() {
-		const isExpanded = this.toggleButton.getAttribute('aria-expanded') === 'true';
+		this.isMenuOpen = !this.isMenuOpen;
 
-		this.toggleButton.setAttribute('aria-expanded', !isExpanded);
-		this.menu.classList.toggle('wcb-hidden');
-		this.openIcon.classList.toggle('wcb-hidden');
-		this.closeIcon.classList.toggle('wcb-hidden');
+		if (this.mobileMenu) {
+			this.mobileMenu.classList.toggle('wcb-hidden', !this.isMenuOpen);
+		}
+
+		if (this.hamburgerIcon && this.closeIcon) {
+			this.hamburgerIcon.classList.toggle('wcb-hidden', this.isMenuOpen);
+			this.closeIcon.classList.toggle('wcb-hidden', !this.isMenuOpen);
+		}
+
+		document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
+	}
+
+	closeMenu() {
+		if (!this.isMenuOpen) return;
+		this.toggleMenu();
+	}
+
+	handleScroll() {
+		if (!this.header) return;
+
+		const currentScrollY = window.scrollY;
+
+		if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
+			// Scrolling down
+			this.header.classList.add('-wcb-translate-y-full');
+			this.closeMenu();
+		} else {
+			// Scrolling up
+			this.header.classList.remove('-wcb-translate-y-full');
+		}
+
+		this.lastScrollY = currentScrollY;
 	}
 }
 

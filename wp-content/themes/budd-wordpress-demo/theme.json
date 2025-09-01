@@ -283,6 +283,11 @@
           "color": "#ffffff1a",
           "name": "White Transparent 10%",
           "slug": "color-43"
+        },
+        {
+          "color": "#ffffff1a",
+          "name": "White Transparent 10%",
+          "slug": "color-44"
         }
       ]
     },
@@ -529,6 +534,91 @@
               ]
             }
           ]
+        },
+        {
+          "fontFamily": "Geist, sans-serif",
+          "slug": "font-1",
+          "fontFace": []
+        },
+        {
+          "fontFamily": "Graphik, sans-serif",
+          "slug": "font-2",
+          "fontFace": []
+        },
+        {
+          "fontFamily": "Helvetica, sans-serif",
+          "slug": "font-3",
+          "fontFace": []
+        },
+        {
+          "fontFamily": "Inter, sans-serif",
+          "slug": "font-4",
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontStyle": "normal",
+              "fontWeight": "400 600",
+              "src": [
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-vietnamese-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-ext-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-ext-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-vietnamese-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-ext-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-500-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-ext-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-cyrillic-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-ext-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-greek-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-vietnamese-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-ext-600-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.2/files/inter-latin-600-normal.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Lato, sans-serif",
+          "slug": "font-5",
+          "fontFace": [
+            {
+              "fontFamily": "Lato",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.2/files/lato-latin-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.2/files/lato-latin-400-normal.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Noto Sans, sans-serif",
+          "slug": "font-6",
+          "fontFace": [
+            {
+              "fontFamily": "Noto Sans",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-cyrillic-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-cyrillic-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-devanagari-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-greek-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-greek-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-vietnamese-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-latin-ext-400-normal.woff2",
+                "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.2/files/noto-sans-latin-400-normal.woff2"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -553,7 +643,10 @@
     "custom": {
       "fontSize": {
         "size-1": "40px",
-        "size-2": "85px"
+        "size-2": "85px",
+        "size-3": "40px",
+        "size-4": "50px",
+        "size-5": "85px"
       },
       "spacing": {
         "space-1": "2.882997989654541px",
@@ -561,7 +654,10 @@
         "space-3": "60px",
         "space-4": "95px",
         "space-5": "168px",
-        "space-6": "220px"
+        "space-6": "220px",
+        "space-7": "168px",
+        "space-8": "220px",
+        "space-9": "625px"
       },
       "borderRadius": {
         "radius-1": "1.4414989948272705px",
@@ -584,7 +680,8 @@
         "lh-9": "1.5em",
         "lh-10": "1.5999999727521623em",
         "lh-11": "1.6000000635782878em",
-        "lh-12": "57.6px"
+        "lh-12": "57.6px",
+        "lh-13": "57.6px"
       }
     }
   }

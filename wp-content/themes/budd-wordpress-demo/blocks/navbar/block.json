@@ -2,7 +2,7 @@
   "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
   "name": "wcb/navbar",
   "title": "Navbar",
-  "description": "A responsive navigation bar with logo, menu links, and call-to-action buttons.",
+  "description": "A sticky navigation bar with logo, navigation links, and call-to-action buttons that auto-hides on scroll.",
   "category": "wcb-blocks",
   "icon": "menu",
   "keywords": [
@@ -28,46 +28,52 @@
   "example": {
     "attributes": {
       "data": {
-        "field_198f712f722003": {
-          "ID": 123,
-          "url": "https://example.com/logo.png",
-          "alt": "Company Logo",
-          "title": "Company Logo"
+        "field_1990669a8000ea": {
+          "url": "https://via.placeholder.com/150x50/333333/ffffff?text=LOGO",
+          "alt": "Site Logo",
+          "title": "Site Logo"
         },
-        "field_198f712f722735": {
+        "field_1990669a800b93": {
           "url": "/",
           "title": "Home",
           "target": ""
         },
-        "field_198f712f72297a": {
+        "field_1990669a800c88": {
           "row-0": {
-            "field_198f712f722e01": {
+            "field_1990669a800a5a": {
               "url": "/about",
               "title": "About",
               "target": ""
             }
           },
           "row-1": {
-            "field_198f712f722e01": {
+            "field_1990669a800a5a": {
               "url": "/services",
               "title": "Services",
               "target": ""
             }
           },
           "row-2": {
-            "field_198f712f722e01": {
+            "field_1990669a800a5a": {
+              "url": "/portfolio",
+              "title": "Portfolio",
+              "target": ""
+            }
+          },
+          "row-3": {
+            "field_1990669a800a5a": {
               "url": "/blog",
               "title": "Blog",
               "target": ""
             }
           }
         },
-        "field_198f712f722e4a": {
+        "field_1990669a800a71": {
           "url": "/contact",
           "title": "Contact us",
           "target": ""
         },
-        "field_198f712f722d6b": {
+        "field_1990669a800f3b": {
           "url": "/download",
           "title": "Download the app",
           "target": ""

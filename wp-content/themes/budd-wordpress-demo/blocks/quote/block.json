@@ -2,13 +2,13 @@
   "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
   "name": "wcb/quote",
   "title": "Quote",
-  "description": "Display a prominent quote with author information and optional background image.",
+  "description": "Display a testimonial or quote with optional logo cloud or call-to-action button sections for social proof and engagement.",
   "category": "wcb-blocks",
   "icon": "format-quote",
   "keywords": [
     "quote",
     "testimonial",
-    "author"
+    "review"
   ],
   "textdomain": "wcanvas-boilerplate",
   "acf": {
@@ -27,19 +27,44 @@
   "example": {
     "attributes": {
       "data": {
-        "field_198f70d86e532a": "The journey of a thousand miles begins with a single step. Our commitment to nature is that first, most important step.",
-        "field_198f70d86e5674": "Jane Doe",
-        "field_198f70d86e526d": "Lead Ecologist",
-        "field_198f70d86e5beb": {
+        "field_1990666ba6d828": "Testimonial",
+        "field_1990666ba6d79a": "TrailHive has completely changed the way I explore the outdoors. The personalized trail recommendations and virtual challenges have kept me motivated and engaged with my adventures.",
+        "field_1990666ba6d692": "- John R.",
+        "field_1990666ba6d44e": {
           "ID": 123,
-          "url": "https://example.com/background-pattern.jpg",
-          "alt": "Topographic pattern background",
-          "title": "Background Pattern",
-          "sizes": {
-            "medium": "https://example.com/background-pattern-300x200.jpg",
-            "large": "https://example.com/background-pattern-1024x683.jpg",
-            "full": "https://example.com/background-pattern.jpg"
+          "url": "https://example.com/background.jpg",
+          "alt": "Background image"
+        },
+        "field_1990666ba6ddbc": true,
+        "field_1990666ba6d0a8": false,
+        "field_1990666ba6d513": "Trusted by teams at over 1,000 of the world's leading organizations",
+        "field_1990666ba6d8a0": {
+          "row-0": {
+            "field_1990666ba6d193": {
+              "ID": 124,
+              "url": "https://example.com/logo1.png",
+              "alt": "Company Logo 1"
+            }
+          },
+          "row-1": {
+            "field_1990666ba6d193": {
+              "ID": 125,
+              "url": "https://example.com/logo2.png",
+              "alt": "Company Logo 2"
+            }
+          },
+          "row-2": {
+            "field_1990666ba6d193": {
+              "ID": 126,
+              "url": "https://example.com/logo3.png",
+              "alt": "Company Logo 3"
+            }
           }
+        },
+        "field_1990666ba6dfdd": {
+          "url": "#",
+          "title": "Learn More",
+          "target": ""
         }
       },
       "mode": "preview"
