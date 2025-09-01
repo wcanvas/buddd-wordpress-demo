@@ -2,7 +2,7 @@
   "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
   "name": "wcb/blog",
   "title": "Blog",
-  "description": "Displays a dynamic and filterable blog feed with header section, category filters, search functionality, and featured post layout.",
+  "description": "Displays a dynamic and filterable blog feed with header section, category filters, search functionality, and a layout featuring one large featured post alongside recent posts.",
   "category": "wcb-blocks",
   "icon": "admin-post",
   "keywords": [
@@ -29,15 +29,15 @@
   "example": {
     "attributes": {
       "data": {
-        "field_198f6fd4bc6436": "Blog",
-        "field_198f6fd4bc6cc2": {
-          "field_198f6fd4bc633e": "h2",
-          "field_198f6fd4bc6c31": "Lorem ipsum dolor sit amet consectetur."
+        "field_199069b4df1aa1": "Blog",
+        "field_199069b4df1a38": {
+          "field_199069b4df190b": "h2",
+          "field_199069b4df112a": "Lorem ipsum dolor sit amet consectetur."
         },
-        "field_198f6fd4bc6170": "Explore our collection of blog posts to learn more about the world of wine.",
-        "field_198f6fd4bc6e73": "All",
-        "field_198f6fd4bc6e7f": "Search",
-        "field_198f6fd4bc6046": []
+        "field_199069b4df1d2e": "Explore our collection of blog posts to learn more about the world of wine.",
+        "field_199069b4df1031": "All",
+        "field_199069b4df13d7": "Search",
+        "field_199069b4df1f8e": ""
       },
       "mode": "preview"
     },

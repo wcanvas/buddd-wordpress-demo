@@ -1,9 +1,9 @@
 {
-  "key": "group_blog_archive",
+  "key": "blog-archive",
   "title": "Block: Blog Archive",
   "fields": [
     {
-      "key": "field_198f6fef54dcba",
+      "key": "field_199069cdde812b",
       "label": "Options",
       "name": "",
       "aria-label": "",
@@ -21,7 +21,7 @@
       "endpoint": 0
     },
     {
-      "key": "field_198f6fef54d956",
+      "key": "field_199069cdde8225",
       "label": "Posts per page",
       "name": "posts_per_page",
       "aria-label": "",
@@ -34,7 +34,7 @@
         "class": "",
         "id": ""
       },
-      "default_value": 8,
+      "default_value": 6,
       "min": 1,
       "max": 50,
       "step": 1,
@@ -59,5 +59,5 @@
   "active": true,
   "description": "This block functions as a blog archive, automatically fetching and displaying a list of the latest posts. Each post is presented in a card format with its featured image, category, read time, title, excerpt, and a Read More link that directs to the full article.",
   "show_in_rest": 0,
-  "modified": 1756490560
+  "modified": 1756752567
 }

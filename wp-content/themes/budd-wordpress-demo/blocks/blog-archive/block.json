@@ -4,12 +4,12 @@
   "title": "Blog Archive",
   "description": "Displays a list of the latest posts in card format with featured images, categories, read time, titles, excerpts, and read more links.",
   "category": "wcb-blocks",
-  "icon": "grid-view",
+  "icon": "admin-post",
   "keywords": [
     "blog",
     "archive",
     "posts",
-    "cards"
+    "articles"
   ],
   "textdomain": "wcanvas-boilerplate",
   "acf": {
@@ -28,7 +28,7 @@
   "example": {
     "attributes": {
       "data": {
-        "field_198f6fef54d956": 8
+        "field_199069cdde8225": 6
       },
       "mode": "preview"
     },

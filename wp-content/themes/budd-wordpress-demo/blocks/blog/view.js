@@ -1,23 +1,11 @@
 import ACFBlock from '../../assets/js/utils/blocks';
 
 /**
- * Blog Block - Client-side functionality
+ * BlogView - Client-side functionality for the Blog block.
  */
 class BlogView {
 	constructor(block) {
 		this.block = block;
-
-		this.dom = {
-			filterButtons: this.block.querySelectorAll('.js-filter-button'),
-			searchInput: this.block.querySelector('.js-search-input'),
-			postItems: this.block.querySelectorAll('.js-post-item'),
-		};
-
-		this.state = {
-			activeCategory: 'all',
-			searchTerm: '',
-		};
-
 		this.init();
 	}
 
@@ -26,75 +14,114 @@ class BlogView {
 	}
 
 	init() {
-		if (this.dom.filterButtons.length) {
-			this.initFilters();
+		this.filterButtons = this.block.querySelectorAll('.js-filter-button');
+		this.searchInput = this.block.querySelector('.js-search-input');
+		this.postsContainer = this.block.querySelector('.js-recent-posts-list');
+		this.featuredPostId = this.block.dataset.featuredPostId || 0;
+
+		this.activeCategory = 'all';
+		this.searchTerm = '';
+		this.debounceTimer = null;
+		this.isLoading = false;
+
+		this.addEventListeners();
+	}
+
+	addEventListeners() {
+		if (this.filterButtons.length) {
+			this.filterButtons.forEach((button) => {
+				button.addEventListener(
+					'click',
+					this.handleFilterClick.bind(this)
+				);
+			});
 		}
-		if (this.dom.searchInput) {
-			this.initSearch();
+
+		if (this.searchInput) {
+			this.searchInput.addEventListener(
+				'input',
+				this.handleSearchInput.bind(this)
+			);
 		}
 	}
 
-	initFilters() {
-		this.dom.filterButtons.forEach((button) => {
-			button.addEventListener('click', this.handleFilterClick.bind(this));
-		});
-	}
+	handleFilterClick(event) {
+		event.preventDefault();
+		const button = event.currentTarget;
+		const category = button.dataset.category;
 
-	initSearch() {
-		// Use a debounce to prevent firing on every keystroke
-		let timeout;
-		this.dom.searchInput.addEventListener('input', (e) => {
-			clearTimeout(timeout);
-			timeout = setTimeout(() => {
-				this.handleSearchInput(e);
-			}, 300);
-		});
-	}
+		if (category === this.activeCategory || this.isLoading) {
+			return;
+		}
 
-	handleFilterClick(e) {
-		const button = e.currentTarget;
-		this.state.activeCategory = button.dataset.category || 'all';
+		this.activeCategory = category;
 
-		// Update active class on buttons
-		this.dom.filterButtons.forEach((btn) => {
-			const baseClasses = 'js-filter-button wcb-font-font-3 wcb-text-xs wcb-leading-tight wcb-rounded-full wcb-px-3 wcb-py-1.5 wcb-transition-colors wcb-duration-300 wcb-cursor-pointer wcb-border wcb-border-solid wcb-flex wcb-items-center wcb-gap-1.5';
-			const activeClasses = 'wcb-bg-color-15 wcb-text-color-27 wcb-border-color-15';
-			const inactiveClasses = 'wcb-bg-transparent wcb-text-color-3 wcb-border-color-5 hover:wcb-bg-color-7 hover:wcb-text-color-30 hover:wcb-border-color-7';
-
-			if (btn.dataset.category === this.state.activeCategory) {
-				btn.className = `${baseClasses} ${activeClasses}`;
+		// Update active classes
+		this.filterButtons.forEach((btn) => {
+			const isActive = btn.dataset.category === this.activeCategory;
+			// These classes are based on the existing filter-button component
+			const activeClasses = ['wcb-bg-color-15', 'wcb-text-color-27', 'wcb-border-color-15'];
+			const inactiveClasses = ['wcb-bg-transparent', 'wcb-text-color-3', 'wcb-border-color-5'];
+			
+			if (isActive) {
+				btn.classList.remove(...inactiveClasses);
+				btn.classList.add(...activeClasses);
 			} else {
-				btn.className = `${baseClasses} ${inactiveClasses}`;
+				btn.classList.remove(...activeClasses);
+				btn.classList.add(...inactiveClasses);
 			}
 		});
 
-		this.applyFilters();
+		this.fetchPosts();
 	}
 
-	handleSearchInput(e) {
-		this.state.searchTerm = e.target.value.toLowerCase().trim();
-		this.applyFilters();
+	handleSearchInput(event) {
+		clearTimeout(this.debounceTimer);
+		this.debounceTimer = setTimeout(() => {
+			this.searchTerm = event.target.value;
+			this.fetchPosts();
+		}, 300);
 	}
 
-	applyFilters() {
-		this.dom.postItems.forEach((item) => {
-			const categorySlugs = item.dataset.categorySlugs || '';
-			const searchContent = item.dataset.searchContent || '';
+	fetchPosts() {
+		if (!this.postsContainer || this.isLoading) {
+			return;
+		}
 
-			const categoryMatch =
-				this.state.activeCategory === 'all' ||
-				categorySlugs.split(' ').includes(this.state.activeCategory);
+		this.isLoading = true;
+		this.postsContainer.style.opacity = '0.5';
+		this.postsContainer.style.transition = 'opacity 0.3s';
 
-			const searchMatch =
-				this.state.searchTerm === '' ||
-				searchContent.includes(this.state.searchTerm);
+		const formData = new FormData();
+		formData.append('action', 'wcb_filter_blog_posts');
+		// Assuming wp_localize_script is used to provide wcb_ajax object with url and nonce
+		if (window.wcb_ajax && window.wcb_ajax.nonce) {
+			formData.append('nonce', window.wcb_ajax.nonce);
+		}
+		formData.append('category', this.activeCategory);
+		formData.append('search_term', this.searchTerm);
+		formData.append('featured_post_id', this.featuredPostId);
 
-			if (categoryMatch && searchMatch) {
-				item.style.display = '';
-			} else {
-				item.style.display = 'none';
-			}
-		});
+		fetch(window.wcb_ajax.url, {
+			method: 'POST',
+			body: formData,
+		})
+			.then((response) => response.json())
+			.then((result) => {
+				if (result.success && result.data.html) {
+					this.postsContainer.innerHTML = result.data.html;
+				} else {
+					this.postsContainer.innerHTML = `<p class="wcb-text-color-3">${result.data.message || 'No posts found.'}</p>`;
+				}
+			})
+			.catch((error) => {
+				console.error('Error fetching posts:', error);
+				this.postsContainer.innerHTML = '<p class="wcb-text-color-3">An error occurred. Please try again.</p>';
+			})
+			.finally(() => {
+				this.isLoading = false;
+				this.postsContainer.style.opacity = '1';
+			});
 	}
 }
 

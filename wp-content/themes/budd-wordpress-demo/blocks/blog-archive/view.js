@@ -1,7 +1,7 @@
 import ACFBlock from '../../assets/js/utils/blocks';
 
 /**
- * BlogArchiveView - Client-side functionality
+ * BlogArchive - Client-side functionality
  */
 class BlogArchiveView {
     constructor(block) {
@@ -14,8 +14,7 @@ class BlogArchiveView {
     }
 
     init() {
-        // This block has no specific JavaScript-driven interactions.
-        // The "Read More" link hover effect is handled by Tailwind's group-hover utility.
+        // This block has no client-side interactive behaviors.
     }
 }
 

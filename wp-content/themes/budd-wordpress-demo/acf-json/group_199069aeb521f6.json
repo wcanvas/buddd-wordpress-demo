@@ -1,9 +1,9 @@
 {
-  "key": "group_199066647523e3",
+  "key": "group_199069aeb521f6",
   "title": "Post Details",
   "fields": [
     {
-      "key": "field_199066658e5db6",
+      "key": "field_199069aff63d37",
       "label": "Read Time",
       "name": "read_time",
       "type": "text",
@@ -38,5 +38,5 @@
   "instruction_placement": "label",
   "hide_on_screen": "",
   "description": "Additional metadata fields for individual posts.",
-  "modified": 1756748994
+  "modified": 1756752445
 }
