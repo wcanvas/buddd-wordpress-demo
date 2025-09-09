@@ -1,13 +1,13 @@
 import ACFBlock from '../../assets/js/utils/blocks';
 
 /**
- * NavbarView - Client-side functionality for the Navbar block
+ * NavbarView - Client-side functionality
  */
 class NavbarView {
 	constructor(block) {
 		this.block = block;
-		this.isMenuOpen = false;
 		this.lastScrollY = window.scrollY;
+		this.isMenuOpen = false;
 
 		this.init();
 	}
@@ -17,60 +17,62 @@ class NavbarView {
 	}
 
 	init() {
-		this.cacheDOMElements();
-		this.addEventListeners();
+		this.initDOM();
+		this.initEvents();
 	}
 
-	cacheDOMElements() {
-		this.header = this.block.querySelector('.js-navbar-header');
-		this.menuToggle = this.block.querySelector('.js-menu-toggle');
+	initDOM() {
+		this.mobileMenuToggle = this.block.querySelector('.js-mobile-menu-toggle');
 		this.mobileMenu = this.block.querySelector('.js-mobile-menu');
-		this.hamburgerIcon = this.block.querySelector('.js-hamburger-icon');
+		this.openIcon = this.block.querySelector('.js-hamburger-icon');
 		this.closeIcon = this.block.querySelector('.js-close-icon');
 	}
 
-	addEventListeners() {
-		if (this.menuToggle) {
-			this.menuToggle.addEventListener('click', this.toggleMenu.bind(this));
+	initEvents() {
+		if (this.mobileMenuToggle) {
+			this.mobileMenuToggle.addEventListener('click', this.handleMenuToggle.bind(this));
 		}
 		window.addEventListener('scroll', this.handleScroll.bind(this), { passive: true });
 	}
 
-	toggleMenu() {
+	handleScroll() {
+		const currentScrollY = window.scrollY;
+		const isScrollingDown = currentScrollY > this.lastScrollY;
+		const shouldHide = currentScrollY > 100 && isScrollingDown;
+
+		this.block.classList.toggle('-wcb-translate-y-full', shouldHide);
+		this.block.classList.toggle('wcb-translate-y-0', !shouldHide);
+
+		if (shouldHide && this.isMenuOpen) {
+			this.closeMenu();
+		}
+
+		this.lastScrollY = currentScrollY;
+	}
+
+	handleMenuToggle() {
 		this.isMenuOpen = !this.isMenuOpen;
-
-		if (this.mobileMenu) {
-			this.mobileMenu.classList.toggle('wcb-hidden', !this.isMenuOpen);
-		}
-
-		if (this.hamburgerIcon && this.closeIcon) {
-			this.hamburgerIcon.classList.toggle('wcb-hidden', this.isMenuOpen);
-			this.closeIcon.classList.toggle('wcb-hidden', !this.isMenuOpen);
-		}
-
-		document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
+		this.updateMenuState();
 	}
 
 	closeMenu() {
 		if (!this.isMenuOpen) return;
-		this.toggleMenu();
+		this.isMenuOpen = false;
+		this.updateMenuState();
 	}
 
-	handleScroll() {
-		if (!this.header) return;
-
-		const currentScrollY = window.scrollY;
-
-		if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
-			// Scrolling down
-			this.header.classList.add('-wcb-translate-y-full');
-			this.closeMenu();
-		} else {
-			// Scrolling up
-			this.header.classList.remove('-wcb-translate-y-full');
+	updateMenuState() {
+		if (!this.mobileMenu || !this.mobileMenuToggle || !this.openIcon || !this.closeIcon) {
+			return;
 		}
 
-		this.lastScrollY = currentScrollY;
+		this.mobileMenu.classList.toggle('wcb-max-h-screen', this.isMenuOpen);
+		this.mobileMenu.classList.toggle('wcb-max-h-0', !this.isMenuOpen);
+
+		this.openIcon.classList.toggle('wcb-hidden', this.isMenuOpen);
+		this.closeIcon.classList.toggle('wcb-hidden', !this.isMenuOpen);
+
+		this.mobileMenuToggle.setAttribute('aria-expanded', this.isMenuOpen.toString());
 	}
 }
 

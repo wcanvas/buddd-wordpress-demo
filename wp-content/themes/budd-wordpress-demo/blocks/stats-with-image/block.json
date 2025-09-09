@@ -11,7 +11,7 @@
     "features",
     "accordion",
     "image",
-    "chart"
+    "two-column"
   ],
   "textdomain": "wcanvas-boilerplate",
   "acf": {
@@ -30,31 +30,31 @@
   "example": {
     "attributes": {
       "data": {
-        "field_198f709d74d519": "FEATURES",
-        "field_198f709d74d88f": {
-          "field_198f709d74d85d": "h2",
-          "field_198f709d74d4bd": "Prioritize revenue-driving work"
+        "field_1993000aeffcdf": "FEATURES",
+        "field_1993000aeff489": {
+          "field_1993000aeff1dd": "h2",
+          "field_1993000aeff3d9": "Prioritize revenue-driving work"
         },
-        "field_198f709d74da18": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
-        "field_198f709d74dbc4": {
+        "field_1993000aeffc51": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
+        "field_1993000aeff12f": {
           "row-0": {
-            "field_198f709d74d77e": "Streamline your reports",
-            "field_198f709d74dd74": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem."
+            "field_1993000aeffcc8": "Streamline your reports",
+            "field_1993000aeffd2e": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem."
           },
           "row-1": {
-            "field_198f709d74d77e": "Advanced analytics",
-            "field_198f709d74dd74": "Get detailed insights into your performance metrics with comprehensive reporting tools."
+            "field_1993000aeffcc8": "Automate data collection",
+            "field_1993000aeffd2e": "Save time with automated data gathering and real-time synchronization across all your platforms."
           },
           "row-2": {
-            "field_198f709d74d77e": "Real-time data",
-            "field_198f709d74dd74": "Access up-to-date information instantly to make informed decisions quickly."
+            "field_1993000aeffcc8": "Generate insights instantly",
+            "field_1993000aeffd2e": "Transform raw data into actionable insights with our advanced analytics and visualization tools."
           }
         },
-        "field_198f709d74d40f": {
+        "field_1993000aeff3c4": {
           "ID": 123,
           "url": "https://example.com/chart-image.jpg",
           "alt": "Analytics dashboard showing key performance metrics",
-          "title": "Dashboard Chart",
+          "title": "Dashboard Analytics",
           "width": 800,
           "height": 600
         }

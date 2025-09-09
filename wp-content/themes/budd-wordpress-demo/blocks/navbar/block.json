@@ -28,52 +28,50 @@
   "example": {
     "attributes": {
       "data": {
-        "field_1990669a8000ea": {
-          "url": "https://via.placeholder.com/150x50/333333/ffffff?text=LOGO",
-          "alt": "Site Logo",
-          "title": "Site Logo"
+        "field_1993002348055e": {
+          "id": 123,
+          "title": "Company Logo",
+          "filename": "logo.png",
+          "url": "https://example.com/wp-content/uploads/logo.png",
+          "alt": "Company Logo",
+          "sizes": {
+            "medium": "https://example.com/wp-content/uploads/logo-300x100.png"
+          }
         },
-        "field_1990669a800b93": {
+        "field_1993002348059e": {
           "url": "/",
           "title": "Home",
           "target": ""
         },
-        "field_1990669a800c88": {
+        "field_199300234807a4": {
           "row-0": {
-            "field_1990669a800a5a": {
+            "field_199300234807fd": {
               "url": "/about",
               "title": "About",
               "target": ""
             }
           },
           "row-1": {
-            "field_1990669a800a5a": {
+            "field_199300234807fd": {
               "url": "/services",
               "title": "Services",
               "target": ""
             }
           },
           "row-2": {
-            "field_1990669a800a5a": {
-              "url": "/portfolio",
-              "title": "Portfolio",
-              "target": ""
-            }
-          },
-          "row-3": {
-            "field_1990669a800a5a": {
+            "field_199300234807fd": {
               "url": "/blog",
               "title": "Blog",
               "target": ""
             }
           }
         },
-        "field_1990669a800a71": {
+        "field_19930023480448": {
           "url": "/contact",
           "title": "Contact us",
           "target": ""
         },
-        "field_1990669a800f3b": {
+        "field_19930023480162": {
           "url": "/download",
           "title": "Download the app",
           "target": ""

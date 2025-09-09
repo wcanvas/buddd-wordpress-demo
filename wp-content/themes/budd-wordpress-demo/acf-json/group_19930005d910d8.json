@@ -1,52 +1,12 @@
 {
-  "key": "group_198f707b3586da",
-  "title": "Block: Left Right",
+  "key": "group_19930005d910d8",
+  "title": "Block: Stats With Image",
   "fields": [
     {
-      "key": "field_198f7081412909",
-      "label": "Media",
-      "name": "",
-      "type": "accordion",
-      "instructions": "",
-      "required": 0,
-      "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
-      "open": 0,
-      "multi_expand": 0,
-      "endpoint": 0
-    },
-    {
-      "key": "field_198f70814129f6",
-      "label": "Image",
-      "name": "image",
-      "type": "image",
-      "instructions": "The main image displayed in the block.",
-      "required": 0,
-      "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
-      "return_format": "array",
-      "preview_size": "medium",
-      "library": "all",
-      "min_width": "",
-      "min_height": "",
-      "min_size": "",
-      "max_width": "",
-      "max_height": "",
-      "max_size": "",
-      "mime_types": ""
-    },
-    {
-      "key": "field_198f708141219e",
+      "key": "field_1993000aeff40e",
       "label": "Content",
       "name": "",
+      "aria-label": "",
       "type": "accordion",
       "instructions": "",
       "required": 0,
@@ -61,28 +21,25 @@
       "endpoint": 0
     },
     {
-      "key": "field_198f7081412811",
-      "label": "Pre-heading",
+      "key": "field_1993000aeffcdf",
+      "label": "Preheading",
       "name": "preheading",
+      "aria-label": "",
       "type": "text",
-      "instructions": "A small text label that appears above the main heading.",
+      "instructions": "A small text label displayed above the main heading",
       "required": 0,
       "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
       "default_value": "FEATURES",
+      "maxlength": "",
       "placeholder": "",
       "prepend": "",
-      "append": "",
-      "maxlength": ""
+      "append": ""
     },
     {
-      "key": "field_198f7081412900",
+      "key": "field_1993000aeff489",
       "label": "Heading",
-      "name": "heading_group",
+      "name": "heading",
+      "aria-label": "",
       "type": "group",
       "instructions": "",
       "required": 0,
@@ -95,9 +52,10 @@
       "layout": "block",
       "sub_fields": [
         {
-          "key": "field_198f7081412f39",
+          "key": "field_1993000aeff1dd",
           "label": "Level",
           "name": "level",
+          "aria-label": "",
           "type": "select",
           "instructions": "",
           "required": 0,
@@ -116,17 +74,18 @@
             "h6": "H6"
           },
           "default_value": "h2",
-          "allow_null": 0,
-          "multiple": 0,
-          "ui": 0,
           "return_format": "value",
+          "multiple": 0,
+          "allow_null": 0,
+          "ui": 0,
           "ajax": 0,
           "placeholder": ""
         },
         {
-          "key": "field_198f70814122aa",
+          "key": "field_1993000aeff3d9",
           "label": "Text",
           "name": "text",
+          "aria-label": "",
           "type": "text",
           "instructions": "",
           "required": 0,
@@ -137,38 +96,35 @@
             "id": ""
           },
           "default_value": "Prioritize revenue-driving work",
+          "maxlength": "",
           "placeholder": "",
           "prepend": "",
-          "append": "",
-          "maxlength": ""
+          "append": ""
         }
       ]
     },
     {
-      "key": "field_198f70814124c9",
+      "key": "field_1993000aeffc51",
       "label": "Description",
       "name": "description",
+      "aria-label": "",
       "type": "textarea",
-      "instructions": "A paragraph of text appearing below the heading.",
+      "instructions": "The main introductory paragraph below the heading",
       "required": 0,
       "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
       "default_value": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
       "placeholder": "",
       "maxlength": "",
-      "rows": "",
+      "rows": 4,
       "new_lines": ""
     },
     {
-      "key": "field_198f7081412e6d",
+      "key": "field_1993000aeff12f",
       "label": "Features",
       "name": "features",
+      "aria-label": "",
       "type": "repeater",
-      "instructions": "A list of collapsible items (accordions) to showcase features.",
+      "instructions": "List of collapsible accordion items",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -176,16 +132,19 @@
         "class": "",
         "id": ""
       },
-      "collapsed": "",
+      "layout": "block",
+      "pagination": 0,
       "min": 0,
       "max": 0,
-      "layout": "block",
+      "collapsed": "",
       "button_label": "Add Feature",
+      "rows_per_page": 20,
       "sub_fields": [
         {
-          "key": "field_198f7081412689",
+          "key": "field_1993000aefffa1",
           "label": "Feature",
-          "name": "feature_accordion",
+          "name": "",
+          "aria-label": "",
           "type": "accordion",
           "instructions": "",
           "required": 0,
@@ -200,11 +159,12 @@
           "endpoint": 0
         },
         {
-          "key": "field_198f7081412614",
+          "key": "field_1993000aeffcc8",
           "label": "Title",
           "name": "title",
+          "aria-label": "",
           "type": "text",
-          "instructions": "The visible title of the accordion item.",
+          "instructions": "The visible title of the accordion item",
           "required": 0,
           "conditional_logic": 0,
           "wrapper": {
@@ -213,17 +173,18 @@
             "id": ""
           },
           "default_value": "Streamline your reports",
+          "maxlength": "",
           "placeholder": "",
           "prepend": "",
-          "append": "",
-          "maxlength": ""
+          "append": ""
         },
         {
-          "key": "field_198f7081412019",
-          "label": "Content",
-          "name": "content",
+          "key": "field_1993000aeffd2e",
+          "label": "Description",
+          "name": "description",
+          "aria-label": "",
           "type": "textarea",
-          "instructions": "The content that is revealed when the item is expanded.",
+          "instructions": "The content that is revealed when the accordion item is expanded",
           "required": 0,
           "conditional_logic": 0,
           "wrapper": {
@@ -234,35 +195,16 @@
           "default_value": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
           "placeholder": "",
           "maxlength": "",
-          "rows": "",
+          "rows": 3,
           "new_lines": ""
         }
       ]
     },
     {
-      "key": "field_198f70814127f6",
-      "label": "Button",
-      "name": "button",
-      "type": "link",
-      "instructions": "The call-to-action button at the bottom of the content.",
-      "required": 0,
-      "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
-      "return_format": "array",
-      "default_value": {
-        "url": "#",
-        "title": "Download the app",
-        "target": ""
-      }
-    },
-    {
-      "key": "field_198f7081412c8a",
-      "label": "Options",
+      "key": "field_1993000aeff8b5",
+      "label": "Media",
       "name": "",
+      "aria-label": "",
       "type": "accordion",
       "instructions": "",
       "required": 0,
@@ -277,11 +219,12 @@
       "endpoint": 0
     },
     {
-      "key": "field_198f7081412fdd",
-      "label": "Image Position",
-      "name": "image_position",
-      "type": "select",
-      "instructions": "Sets the position of the image relative to the text content.",
+      "key": "field_1993000aeff3c4",
+      "label": "Showcase Image",
+      "name": "showcase_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "The large image displayed in the right column",
       "required": 0,
       "conditional_logic": 0,
       "wrapper": {
@@ -289,17 +232,16 @@
         "class": "",
         "id": ""
       },
-      "choices": {
-        "left": "Left",
-        "right": "Right"
-      },
-      "default_value": "left",
-      "allow_null": 0,
-      "multiple": 0,
-      "ui": 0,
-      "return_format": "value",
-      "ajax": 0,
-      "placeholder": ""
+      "return_format": "array",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "",
+      "preview_size": "medium"
     }
   ],
   "location": [
@@ -307,7 +249,7 @@
       {
         "param": "block",
         "operator": "==",
-        "value": "wcb/left-right"
+        "value": "wcb/stats-with-image"
       }
     ]
   ],
@@ -318,7 +260,7 @@
   "instruction_placement": "label",
   "hide_on_screen": "",
   "active": true,
-  "description": "This block displays content in a two-column layout, featuring a prominent image on one side and descriptive text on the other. The text section includes a pre-heading, a main heading, a short description, a series of collapsible accordion items for detailed features, and a call-to-action button.",
+  "description": "This block displays key features or statistics in a two-column layout. The left column contains introductory text and a collapsible accordion list for detailed points. The right column showcases a prominent image, typically a chart, graph, or product illustration, to visually support the text content.",
   "show_in_rest": 0,
-  "modified": 1756491158
+  "modified": 1757446975
 }
