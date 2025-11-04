@@ -1,0 +1,81 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/section-cards",
+  "title": "Section Cards",
+  "description": "Display product features in a visually appealing grid with flexible card layouts and positioning options.",
+  "category": "wcb-blocks",
+  "icon": "grid-view",
+  "keywords": [
+    "cards",
+    "features",
+    "grid",
+    "section"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f70e797a329": {
+          "field_198f70e797a80d": "h2",
+          "field_198f70e797a23e": "Turn your inventory operations into a competitive advantage"
+        },
+        "field_198f70e797aa5c": {
+          "row-0": {
+            "field_198f70e797b25d": "One tab to rule them all",
+            "field_198f70e797b3e4": "Monitor your inventory data in real time ⚡️",
+            "field_198f70e797b030": {
+              "url": "https://via.placeholder.com/600x400",
+              "alt": "Dashboard mockup"
+            },
+            "field_198f70e797b56c": "text_left",
+            "field_198f70e797b6d5": false
+          },
+          "row-1": {
+            "field_198f70e797b25d": "Smart Analytics",
+            "field_198f70e797b3e4": "Get insights that help you make better business decisions with advanced reporting tools.",
+            "field_198f70e797b030": {
+              "url": "https://via.placeholder.com/600x400",
+              "alt": "Analytics dashboard"
+            },
+            "field_198f70e797b56c": "text_right",
+            "field_198f70e797b6d5": false
+          },
+          "row-2": {
+            "field_198f70e797b25d": "Complete Integration",
+            "field_198f70e797b3e4": "Seamlessly connect with your existing tools and workflows for maximum efficiency.",
+            "field_198f70e797b030": {
+              "url": "https://via.placeholder.com/800x400",
+              "alt": "Integration overview"
+            },
+            "field_198f70e797b56c": "text_top",
+            "field_198f70e797b6d5": true
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

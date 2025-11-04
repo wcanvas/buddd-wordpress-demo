@@ -1,0 +1,320 @@
+{
+  "key": "group_19906665c85342",
+  "title": "Block: Quote",
+  "fields": [
+    {
+      "key": "field_1990666ba6d05a",
+      "label": "Content",
+      "name": "content_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 1,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_1990666ba6d828",
+      "label": "Pre-heading",
+      "name": "pre_heading",
+      "type": "text",
+      "instructions": "The small text label above the quote (e.g., \"TESTIMONIAL\")",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Testimonial",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_1990666ba6d79a",
+      "label": "Quote",
+      "name": "quote",
+      "type": "textarea",
+      "instructions": "The main testimonial text",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "TrailHive has completely changed the way I explore the outdoors. The personalized trail recommendations and virtual challenges have kept me motivated and engaged with my adventures.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": ""
+    },
+    {
+      "key": "field_1990666ba6d692",
+      "label": "Author",
+      "name": "author",
+      "type": "text",
+      "instructions": "The name of the person who gave the quote",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "- John R.",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_1990666ba6d44f",
+      "label": "Media",
+      "name": "media_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_1990666ba6d44e",
+      "label": "Background Image",
+      "name": "background_image",
+      "type": "image",
+      "instructions": "Background image for the quote section",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_1990666ba6db80",
+      "label": "Options",
+      "name": "options_accordion",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_1990666ba6ddbc",
+      "label": "Show Logo Cloud",
+      "name": "show_logo_cloud",
+      "type": "true_false",
+      "instructions": "Toggle to show or hide the logo cloud section",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "message": "",
+      "default_value": 0,
+      "ui": 1,
+      "ui_on_text": "",
+      "ui_off_text": ""
+    },
+    {
+      "key": "field_1990666ba6d0a8",
+      "label": "Show CTA",
+      "name": "show_cta",
+      "type": "true_false",
+      "instructions": "Toggle to show or hide the call-to-action button",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "message": "",
+      "default_value": 0,
+      "ui": 1,
+      "ui_on_text": "",
+      "ui_off_text": ""
+    },
+    {
+      "key": "field_1990666ba6d513",
+      "label": "Logo Cloud Title",
+      "name": "logo_cloud_title",
+      "type": "text",
+      "instructions": "The title displayed above the logos",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_1990666ba6ddbc",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Trusted by teams at over 1,000 of the world's leading organizations",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_1990666ba6d8a0",
+      "label": "Logos",
+      "name": "logos",
+      "type": "repeater",
+      "instructions": "A list of logos to display",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_1990666ba6ddbc",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "block",
+      "button_label": "Add Logo",
+      "sub_fields": [
+        {
+          "key": "field_1990666ba6d250",
+          "label": "Logo",
+          "name": "logo_accordion",
+          "type": "accordion",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "open": 0,
+          "multi_expand": 0,
+          "endpoint": 0
+        },
+        {
+          "key": "field_1990666ba6d193",
+          "label": "Logo",
+          "name": "logo",
+          "type": "image",
+          "instructions": "The logo image",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        }
+      ]
+    },
+    {
+      "key": "field_1990666ba6dfdd",
+      "label": "CTA Button",
+      "name": "cta_button",
+      "type": "link",
+      "instructions": "The call-to-action button",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_1990666ba6d0a8",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ],
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "#",
+        "title": "Learn More",
+        "target": ""
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/quote"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block displays a testimonial or quote with optional logo cloud or CTA button sections",
+  "show_in_rest": 0,
+  "modified": 1756749019
+}

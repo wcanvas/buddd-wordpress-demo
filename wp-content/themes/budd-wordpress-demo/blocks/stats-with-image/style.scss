@@ -1,0 +1,9 @@
+.wp-block-wcb-stats-with-image {
+	&__image {
+		box-shadow: 0 15px 30px 0 rgba(35, 46, 38, 0.1);
+	}
+
+	.js-accordion-content {
+		transition: height 0.3s ease-in-out;
+	}
+}

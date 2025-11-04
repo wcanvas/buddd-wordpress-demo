@@ -1,0 +1,194 @@
+{
+  "key": "group_1993001f930333",
+  "title": "Block: Navbar",
+  "fields": [
+    {
+      "key": "field_199300234808c1",
+      "label": "Content",
+      "name": "",
+      "aria-label": "",
+      "type": "accordion",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "open": 0,
+      "multi_expand": 0,
+      "endpoint": 0
+    },
+    {
+      "key": "field_1993002348055e",
+      "label": "Logo",
+      "name": "logo",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "The site logo displayed on the left.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_1993002348059e",
+      "label": "Logo Link",
+      "name": "logo_link",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "The URL the logo links to, typically the homepage.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "/",
+        "title": "Home",
+        "target": ""
+      }
+    },
+    {
+      "key": "field_199300234807a4",
+      "label": "Navigation Links",
+      "name": "navigation_links",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "A list of the main text-based navigation links.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Add Navigation Link",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_19930023480f03",
+          "label": "Navigation Link",
+          "name": "",
+          "aria-label": "",
+          "type": "accordion",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "open": 0,
+          "multi_expand": 0,
+          "endpoint": 0
+        },
+        {
+          "key": "field_199300234807fd",
+          "label": "Link",
+          "name": "link",
+          "aria-label": "",
+          "type": "link",
+          "instructions": "A single navigation item, containing its text and URL.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "default_value": {
+            "url": "#",
+            "title": "Navigation Link",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_19930023480448",
+      "label": "Contact Button",
+      "name": "contact_button",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "The secondary (outline style) button.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "#",
+        "title": "Contact us",
+        "target": ""
+      }
+    },
+    {
+      "key": "field_19930023480162",
+      "label": "Download Button",
+      "name": "download_button",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "The primary (solid style) call-to-action button.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "default_value": {
+        "url": "#",
+        "title": "Download the app",
+        "target": ""
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "wcb/navbar"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "This block renders the main website navigation bar. It features a logo on the left, a central list of navigation links, and two call-to-action buttons on the right. All elements, including the logo, links, and buttons, are fully editable.",
+  "show_in_rest": 0,
+  "modified": 1757447074
+}

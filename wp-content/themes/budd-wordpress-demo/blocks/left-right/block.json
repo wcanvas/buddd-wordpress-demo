@@ -1,0 +1,74 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/left-right",
+  "title": "Left Right",
+  "description": "A flexible two-column layout block with image and content sections, featuring accordions and customizable positioning.",
+  "category": "wcb-blocks",
+  "icon": "columns",
+  "keywords": [
+    "layout",
+    "columns",
+    "image",
+    "accordion",
+    "features"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_1992ffed602b39": {
+          "ID": 123,
+          "url": "https://example.com/image.jpg",
+          "alt": "Sample image",
+          "title": "Sample Image"
+        },
+        "field_1992ffed6020b5": "Features",
+        "field_1992ffed6025c4": {
+          "field_1992ffed602056": "h2",
+          "field_1992ffed6030ef": "Prioritize revenue-driving work"
+        },
+        "field_1992ffed60369a": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
+        "field_1992ffed603e6c": {
+          "row-0": {
+            "field_1992ffed603b74": "Streamline your reports",
+            "field_1992ffed603924": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem."
+          },
+          "row-1": {
+            "field_1992ffed603b74": "Automate workflows",
+            "field_1992ffed603924": "Save time with intelligent automation that handles repetitive tasks and processes."
+          }
+        },
+        "field_1992ffed6033ba": {
+          "url": "#",
+          "title": "Download the app",
+          "target": ""
+        },
+        "field_1992ffed603572": "left"
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/navbar",
+  "title": "Navbar",
+  "description": "A sticky navigation bar with logo, navigation links, and call-to-action buttons that auto-hides on scroll.",
+  "category": "wcb-blocks",
+  "icon": "menu",
+  "keywords": [
+    "navbar",
+    "navigation",
+    "menu",
+    "header"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_1993002348055e": {
+          "id": 123,
+          "title": "Company Logo",
+          "filename": "logo.png",
+          "url": "https://example.com/wp-content/uploads/logo.png",
+          "alt": "Company Logo",
+          "sizes": {
+            "medium": "https://example.com/wp-content/uploads/logo-300x100.png"
+          }
+        },
+        "field_1993002348059e": {
+          "url": "/",
+          "title": "Home",
+          "target": ""
+        },
+        "field_199300234807a4": {
+          "row-0": {
+            "field_199300234807fd": {
+              "url": "/about",
+              "title": "About",
+              "target": ""
+            }
+          },
+          "row-1": {
+            "field_199300234807fd": {
+              "url": "/services",
+              "title": "Services",
+              "target": ""
+            }
+          },
+          "row-2": {
+            "field_199300234807fd": {
+              "url": "/blog",
+              "title": "Blog",
+              "target": ""
+            }
+          }
+        },
+        "field_19930023480448": {
+          "url": "/contact",
+          "title": "Contact us",
+          "target": ""
+        },
+        "field_19930023480162": {
+          "url": "/download",
+          "title": "Download the app",
+          "target": ""
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

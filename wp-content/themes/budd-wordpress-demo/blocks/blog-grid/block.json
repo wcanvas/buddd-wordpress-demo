@@ -1,0 +1,57 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/blog-grid",
+  "title": "Blog Grid",
+  "description": "Display a curated grid of blog posts with customizable title section and flexible post selection options.",
+  "category": "wcb-blocks",
+  "icon": "grid-view",
+  "keywords": [
+    "blog",
+    "grid",
+    "posts",
+    "articles"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f7022fdc5be": "Blog",
+        "field_198f7022fdc727": {
+          "field_198f7022fdc442": "h2",
+          "field_198f7022fdc2da": "Latest Insights & Stories"
+        },
+        "field_198f7022fdcada": "Discover our latest thoughts, insights, and stories from our team and community.",
+        "field_198f7022fdcfa7": "1",
+        "field_198f7022fdc63b": {
+          "url": "/blog",
+          "title": "View all posts",
+          "target": ""
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

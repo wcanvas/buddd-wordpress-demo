@@ -1,0 +1,75 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/stats-with-image",
+  "title": "Stats With Image",
+  "description": "Displays key features or statistics in a two-column layout with introductory text, collapsible accordion list, and a prominent showcase image.",
+  "category": "wcb-blocks",
+  "icon": "chart-bar",
+  "keywords": [
+    "stats",
+    "statistics",
+    "features",
+    "accordion",
+    "image",
+    "two-column"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_1993000aeffcdf": "FEATURES",
+        "field_1993000aeff489": {
+          "field_1993000aeff1dd": "h2",
+          "field_1993000aeff3d9": "Prioritize revenue-driving work"
+        },
+        "field_1993000aeffc51": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem.",
+        "field_1993000aeff12f": {
+          "row-0": {
+            "field_1993000aeffcc8": "Streamline your reports",
+            "field_1993000aeffd2e": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem."
+          },
+          "row-1": {
+            "field_1993000aeffcc8": "Automate data collection",
+            "field_1993000aeffd2e": "Save time with automated data gathering and real-time synchronization across all your platforms."
+          },
+          "row-2": {
+            "field_1993000aeffcc8": "Generate insights instantly",
+            "field_1993000aeffd2e": "Transform raw data into actionable insights with our advanced analytics and visualization tools."
+          }
+        },
+        "field_1993000aeff3c4": {
+          "ID": 123,
+          "url": "https://example.com/chart-image.jpg",
+          "alt": "Analytics dashboard showing key performance metrics",
+          "title": "Dashboard Analytics",
+          "width": 800,
+          "height": 600
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

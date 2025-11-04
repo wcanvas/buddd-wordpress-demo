@@ -1,0 +1,59 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/full-width-banner",
+  "title": "Full Width Banner",
+  "description": "A visually engaging full-width banner with a prominent heading and large image, perfect for page introductions or section headers.",
+  "category": "wcb-blocks",
+  "icon": "cover-image",
+  "keywords": [
+    "banner",
+    "hero",
+    "full-width",
+    "image",
+    "heading"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f704c5510af": {
+          "field_198f704c55191a": "h2",
+          "field_198f704c551757": "Find new trails to explore and adventures to embark on."
+        },
+        "field_198f704c551644": {
+          "id": 123,
+          "title": "Banner Image",
+          "alt": "Beautiful landscape with mountains and trails",
+          "url": "https://via.placeholder.com/1440x600/4a90e2/ffffff?text=Full+Width+Banner",
+          "sizes": {
+            "large": "https://via.placeholder.com/1440x600/4a90e2/ffffff?text=Full+Width+Banner"
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

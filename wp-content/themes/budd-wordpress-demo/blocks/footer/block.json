@@ -1,0 +1,134 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/footer",
+  "title": "Footer",
+  "description": "A comprehensive website footer with logo, navigation columns, newsletter subscription, copyright notice, legal links, and social media icons.",
+  "category": "wcb-blocks",
+  "icon": "layout",
+  "keywords": [
+    "footer",
+    "navigation",
+    "newsletter",
+    "social",
+    "links"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f714ffd4bb2": {
+          "url": "https://example.com/logo.png",
+          "alt": "Company Logo",
+          "title": "Company Logo"
+        },
+        "field_198f714ffd48c2": {
+          "url": "/",
+          "title": "Home",
+          "target": ""
+        },
+        "field_198f714ffd42b1": {
+          "row-0": {
+            "field_198f714ffd45d0": "Company",
+            "field_198f714ffd4b15": {
+              "row-0": {
+                "field_198f714ffd4f3b": {
+                  "url": "/about",
+                  "title": "About Us",
+                  "target": ""
+                }
+              },
+              "row-1": {
+                "field_198f714ffd4f3b": {
+                  "url": "/careers",
+                  "title": "Careers",
+                  "target": ""
+                }
+              }
+            }
+          },
+          "row-1": {
+            "field_198f714ffd45d0": "Support",
+            "field_198f714ffd4b15": {
+              "row-0": {
+                "field_198f714ffd4f3b": {
+                  "url": "/help",
+                  "title": "Help Center",
+                  "target": ""
+                }
+              },
+              "row-1": {
+                "field_198f714ffd4f3b": {
+                  "url": "/contact",
+                  "title": "Contact",
+                  "target": ""
+                }
+              }
+            }
+          }
+        },
+        "field_198f714ffd4609": "Enter your email",
+        "field_198f714ffd4273": {
+          "url": "#",
+          "title": "Subscribe",
+          "target": ""
+        },
+        "field_198f714ffd4b29": "By subscribing you agree to with our <a href=\"#\">Privacy Policy</a>",
+        "field_198f714ffd45f2": "© 2023 TrailHive. All rights reserved.",
+        "field_198f714ffd45b4": {
+          "row-0": {
+            "field_198f714ffd4a27": {
+              "url": "/privacy",
+              "title": "Privacy Policy",
+              "target": ""
+            }
+          },
+          "row-1": {
+            "field_198f714ffd4a27": {
+              "url": "/terms",
+              "title": "Terms of Service",
+              "target": ""
+            }
+          }
+        },
+        "field_198f714ffd4cfc": {
+          "row-0": {
+            "field_198f714ffd49f9": "facebook",
+            "field_198f714ffd4876": "https://facebook.com/company"
+          },
+          "row-1": {
+            "field_198f714ffd49f9": "twitter",
+            "field_198f714ffd4876": "https://twitter.com/company"
+          },
+          "row-2": {
+            "field_198f714ffd49f9": "linkedin",
+            "field_198f714ffd4876": "https://linkedin.com/company"
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

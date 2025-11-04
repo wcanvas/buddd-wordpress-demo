@@ -1,0 +1,82 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/cards-with-icons",
+  "title": "Cards With Icons",
+  "description": "Display a section with a main heading, descriptive paragraph, and a grid of feature cards with icons, titles, and descriptions.",
+  "category": "wcb-blocks",
+  "icon": "grid-view",
+  "keywords": [
+    "cards",
+    "icons",
+    "features",
+    "grid"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f70c52b82a6": {
+          "field_198f70c52b8e20": "h2",
+          "field_198f70c52b8da5": "Our special features"
+        },
+        "field_198f70c52b89a6": "Amet, fames enim vel nec elit aliquet vestibulum vitae tempus. Lacus adipiscing vitae, aliquet lorem. Praesent nulla consequat mauris, tristique elementum, aenean enim.",
+        "field_198f70c52b8225": {
+          "row-0": {
+            "field_198f70c52b8536": {
+              "id": 1,
+              "title": "Feature Icon 1",
+              "url": "https://via.placeholder.com/64x64",
+              "alt": "Feature Icon 1"
+            },
+            "field_198f70c52b8ae8": "Fast Performance",
+            "field_198f70c52b8f2d": "Lightning-fast loading times and optimized performance for the best user experience."
+          },
+          "row-1": {
+            "field_198f70c52b8536": {
+              "id": 2,
+              "title": "Feature Icon 2",
+              "url": "https://via.placeholder.com/64x64",
+              "alt": "Feature Icon 2"
+            },
+            "field_198f70c52b8ae8": "Secure & Reliable",
+            "field_198f70c52b8f2d": "Built with security in mind and reliable infrastructure to keep your data safe."
+          },
+          "row-2": {
+            "field_198f70c52b8536": {
+              "id": 3,
+              "title": "Feature Icon 3",
+              "url": "https://via.placeholder.com/64x64",
+              "alt": "Feature Icon 3"
+            },
+            "field_198f70c52b8ae8": "Easy to Use",
+            "field_198f70c52b8f2d": "Intuitive interface designed for users of all skill levels with comprehensive documentation."
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "file:./style-index.css"
+  ]
+}

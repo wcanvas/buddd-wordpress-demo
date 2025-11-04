@@ -1,0 +1,77 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+  "name": "wcb/gallery-block",
+  "title": "Gallery Block",
+  "description": "Display a title, subtitle, and carousel of images with navigation arrows and pagination dots for showcasing collections.",
+  "category": "wcb-blocks",
+  "icon": "format-gallery",
+  "keywords": [
+    "gallery",
+    "carousel",
+    "images",
+    "slideshow"
+  ],
+  "textdomain": "wcanvas-boilerplate",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./render.php"
+  },
+  "supports": {
+    "customClassName": false,
+    "align": false,
+    "renaming": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "field_198f706840b127": {
+          "field_198f706840bddb": "h2",
+          "field_198f706840b7f1": "Explore Experiences"
+        },
+        "field_198f706840b198": "Discover the beauty of wine through pictures",
+        "field_198f706840bb39": {
+          "row-0": {
+            "field_198f706840bec0": {
+              "ID": 123,
+              "url": "https://via.placeholder.com/800x600/4a90e2/ffffff?text=Gallery+Image+1",
+              "alt": "Gallery Image 1",
+              "title": "Gallery Image 1"
+            }
+          },
+          "row-1": {
+            "field_198f706840bec0": {
+              "ID": 124,
+              "url": "https://via.placeholder.com/800x600/50c878/ffffff?text=Gallery+Image+2",
+              "alt": "Gallery Image 2",
+              "title": "Gallery Image 2"
+            }
+          },
+          "row-2": {
+            "field_198f706840bec0": {
+              "ID": 125,
+              "url": "https://via.placeholder.com/800x600/ff6b6b/ffffff?text=Gallery+Image+3",
+              "alt": "Gallery Image 3",
+              "title": "Gallery Image 3"
+            }
+          }
+        }
+      },
+      "mode": "preview"
+    },
+    "viewportWidth": 1440
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "viewScript": [
+    "file:./view.js"
+  ],
+  "style": [
+    "swiper",
+    "file:./style-index.css"
+  ]
+}
